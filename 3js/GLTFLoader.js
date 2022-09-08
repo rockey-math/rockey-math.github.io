@@ -61,7 +61,8 @@ import {
 	Vector3,
 	VectorKeyframeTrack,
 	sRGBEncoding
-} from 'https://threejs.org/examples/../build/models/gltf/LeePerrySmith/LeePerrySmith.glb';
+} from 'three';
+// https://threejs.org/examples/../build/models/gltf/LeePerrySmith/LeePerrySmith.glb';
 
 class GLTFLoader extends Loader {
 
