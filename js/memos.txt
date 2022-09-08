@@ -1,3 +1,6 @@
+* 3D shape:
+  https://library.fridoverweij.com/codelab/geometric_shapes/index.html
+  
 * p5 WEBG basic: 
   https://github.com/processing/p5.js/wiki/Getting-started-with-WebGL-in-p5
   https://www.ssf.net/home/showpublisheddocument/20530/637271681171270000
