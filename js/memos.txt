@@ -1,1 +1,3 @@
 https://www.aidanjnelson.com/projects/gsoc-2018/   camera and display coordinates
+
+p5js useful features - https://spin.atomicobject.com/2021/03/17/p5-tips-tricks/
