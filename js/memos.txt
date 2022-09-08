@@ -1,6 +1,7 @@
 * p5 WEBG basic: 
   https://github.com/processing/p5.js/wiki/Getting-started-with-WebGL-in-p5
   https://www.ssf.net/home/showpublisheddocument/20530/637271681171270000
+  https://p5js.org/examples/form-3d-primitives.html
 
 * p5.EasyCam: 
  https://freshfork.github.io/p5.EasyCam/
