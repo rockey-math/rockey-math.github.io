@@ -61,7 +61,8 @@ import {
 	Vector3,
 	VectorKeyframeTrack,
 	sRGBEncoding
-} from 'three';
+} from 'https://feria.esimposio.com/wp-content/uploads/3d/examples/';
+// 'three';
 // https://threejs.org/examples/../build/models/gltf/LeePerrySmith/LeePerrySmith.glb';
 
 class GLTFLoader extends Loader {
