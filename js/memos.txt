@@ -3,3 +3,5 @@ https://www.aidanjnelson.com/projects/gsoc-2018/   camera and display coordinate
 p5js useful features - https://spin.atomicobject.com/2021/03/17/p5-tips-tricks/
 
 color gradient - https://erraticgenerator.com/blog/gradient-lines-and-brushes-in-p5js/
+
+WEBGL VideoRecorder for p5.js - https://prossel.github.io/WebGL-VideoRecorder/
