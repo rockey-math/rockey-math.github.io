@@ -21,5 +21,5 @@ WEBGL VideoRecorder for p5.js - https://prossel.github.io/WebGL-VideoRecorder/
  https://blogg.bekk.no/procedural-planet-in-webgl-and-three-js-fc77f14f5505
  - apple shape: https://stackoverflow.com/questions/63574651/create-solid-3d-shape-in-p5-js
  
- * attractor: https://www.dynamicmath.xyz/calculus/velfields/Aizawa/
+ * p5js attractor: https://www.dynamicmath.xyz/calculus/velfields/Aizawa/
               https://www.dynamicmath.xyz/strange-attractors/
