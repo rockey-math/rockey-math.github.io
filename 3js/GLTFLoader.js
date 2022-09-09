@@ -63,7 +63,6 @@ import {
 	sRGBEncoding
 } from 'https://threejs.org/examples/';
 // 'http://www.dscf.units.it/~balducci/three/examples/';
-// https://feria.esimposio.com/wp-content/uploads/3d/examples/';
 // 'three';
 // https://threejs.org/examples/../build/models/gltf/LeePerrySmith/LeePerrySmith.glb';
 
