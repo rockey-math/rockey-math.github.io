@@ -19,7 +19,8 @@ var x = 128.0,
 // https://htmlpreview.github.io/
 
 function fourier(order) {
-		var phase = order * Math.pow(-1, order) * time * TAU;
+	        order = Math.pow(-1, order) * order;
+		var phase = order * time * TAU;
 	        console.log('phase = ' + phase);
 	
 		var radius = 4.0 / (order * Math.PI) * Scale;
