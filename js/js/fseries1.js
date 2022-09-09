@@ -19,7 +19,7 @@ var x = 128.0,
 // https://htmlpreview.github.io/
 
 function fourier(order) {
-	        order =  (-1)**order ;
+	        order =  Math.pow(-1, order) ;
 	        console.log('order = ' + order);
 	
 		var phase = order * time * TAU;
