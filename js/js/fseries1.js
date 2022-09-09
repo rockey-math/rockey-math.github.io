@@ -20,6 +20,8 @@ var x = 128.0,
 
 function fourier(order) {
 	        order = order * (-1) ;
+	        console.log('order = ' + order);
+	
 		var phase = order * time * TAU;
 		var radius = 4.0 / (order * Math.PI) * Scale;
 	        if (radius < 0) { radius = (-1)*radius; }
