@@ -22,7 +22,7 @@ function fourier(order) {
 	        // order = Math.pow(-1, order) * (order % 5 + 1) * order;
 	        order = Math.pow(-1, order) * (order % 5 + 1);
 		var phase = order * time * TAU;
-	        console.log('order = ' + order);
+	        // console.log('order = ' + order);
 	
 		var radius = 4.0 / (order * Math.PI) * Scale;
 	        if (radius < 0) { radius = (-1)*radius; }
