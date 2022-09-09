@@ -22,6 +22,8 @@ function fourier(order) {
 	        order = order * (-1) ;
 		var phase = order * time * TAU;
 		var radius = 4.0 / (order * Math.PI) * Scale;
+	        if (radius < 0) { radius = (-1)*radius; }
+	
 		context.beginPath();
 		context.lineWidth = 1.0;
 		context.strokeStyle = "rgba(255,128,32,1.0)";
