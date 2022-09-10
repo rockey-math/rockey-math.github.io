@@ -25694,8 +25694,8 @@ THREE.WebGLRenderer = function ( parameters ) {
 				} else {
 
 					// _gl.texImage2D( _gl.TEXTURE_2D, 0, glFormat, glFormat, glType, texture.image );
-					_gl.texImage2D( _gl.TEXTURE_2D, 1, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, mipmapImage); // https://www.oreilly.com/library/view/real-time-3d-graphics/9781788629690/ddf4022b-a746-443f-b913-ffab3ca3c079.xhtml
-
+					// _gl.texImage2D( _gl.TEXTURE_2D, 1, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, mipmapImage); // https://www.oreilly.com/library/view/real-time-3d-graphics/9781788629690/ddf4022b-a746-443f-b913-ffab3ca3c079.xhtml
+                                        _gl.texImage2D( _gl.TEXTURE_2D, 1, _gl.RGBA, _gl.RGBA, _gl.UNSIGNED_BYTE, mipmapImage); 
 				}
 
 			}
