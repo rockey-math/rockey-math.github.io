@@ -69,7 +69,9 @@ function setup() {
     
     console.log(Dw.EasyCam.INFO);
     
-    easycam = new Dw.EasyCam(this._renderer, {distance : 4.5});
+    // https://freshfork.github.io/p5.EasyCam/
+    // https://github.com/freshfork/p5.EasyCam/blob/master/examples/CameraStates/CameraStates.js
+    easycam = new Dw.EasyCam(this._renderer, {distance : 4.5});  
     
     // place initial samples
     initSketch();
@@ -140,7 +142,7 @@ function initSketch(){
 
 function draw(){
     
-    // projection
+    // projection        https://freshfork.github.io/p5.EasyCam/
     perspective(60 * PI/180, width/height, 1, 5000);
     
     // BG
