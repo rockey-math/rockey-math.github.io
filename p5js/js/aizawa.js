@@ -147,7 +147,7 @@ function draw(){
     background(0);
     
     rotateX(0.9);
-    rotateY(0);
+    rotateY(0.9); // 0
     rotateZ(0.9)
     let hu = 0;
     push();
