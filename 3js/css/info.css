@@ -17,7 +17,7 @@
 {
 	outline-width: 0px !important;
 	background-color: transparent !important;
-    background-image: url('../images/icon-close-16.png') !important;
+    background-image: url('https://stemkoski.github.io/Three.js/images/icon-close-16.png') !important;
 	background-repeat:no-repeat !important;
 }
 
@@ -26,7 +26,7 @@
 .ui-dialog-titlebar-close:focus 
 {
     background-color: transparent !important;
-    background-image: url('../images/icon-close-16.png') !important;
+    background-image: url('https://stemkoski.github.io/Three.js/images/icon-close-16.png') !important;
 	background-repeat:no-repeat !important;
 }
 
