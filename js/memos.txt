@@ -19,6 +19,11 @@ WEBGL VideoRecorder for p5.js - https://prossel.github.io/WebGL-VideoRecorder/
 
 * 3js sphere:
  https://blogg.bekk.no/procedural-planet-in-webgl-and-three-js-fc77f14f5505
+ 
+ * old 3js curves:
+  https://stemkoski.github.io/Three.js/Graphulus-Curve.html
+  https://stemkoski.github.io/MathBox/graph3d-curve.html
+  
  - apple shape: https://stackoverflow.com/questions/63574651/create-solid-3d-shape-in-p5-js
  
  * fibonacci sphere: 
