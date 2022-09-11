@@ -1,44 +1,88 @@
-  <!DOCTYPE html>
-  <html lang="en">
+  <html>
+    <title>Knot-creatures flocking</title>
     <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="keywords" content="p5.js, p5.js web editor, web editor, processing, code editor" />
-      <meta name="description" content="A web editor for p5.js, a JavaScript library with the goal of making coding accessible to artists, designers, educators, and beginners." />
-      <title>p5.js Web Editor</title>
-      <link rel='stylesheet' href='https://editor.p5js.org/app.cc1cb9523acc474f72ca.css' />
-      <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-      <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-      <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' / >
-      <script>
-        if (!window.process) {
-          window.process = {};
-        }
-        if (!window.process.env) {
-          window.process.env = {};
-        }
-        window.process.env.API_URL = 'https://editor.p5js.org/editor';
-        window.process.env.NODE_ENV = 'production';
-        window.process.env.S3_BUCKET = 'assets.editor.p5js.org';
-        window.process.env.S3_BUCKET_URL_BASE = 'https://assets.editor.p5js.org/';
-        window.process.env.AWS_REGION = 'us-west-2';
-        window.process.env.FORCE_TO_HTTPS = false;
-        window.process.env.CLIENT = true;
-        window.process.env.LOGIN_ENABLED = true;
-        window.process.env.EXAMPLES_ENABLED = true;
-        window.process.env.UI_ACCESS_TOKEN_ENABLED = false;
-        window.process.env.UI_COLLECTIONS_ENABLED = true;
-        window.process.env.UPLOAD_LIMIT = 250000000;
-        window.process.env.MOBILE_ENABLED = undefined;
-        window.process.env.TRANSLATIONS_ENABLED = true; 
-        window.process.env.PREVIEW_URL = 'https://preview.p5js.org';
-        window.process.env.GA_MEASUREMENT_ID='UA-53383000-1';
-      </script>
-    </head>
-    <body>
-      <div id="root" class="root-app">
-      </div>
-      <script src='./js/curves_insects.js'></script>
+        <meta charset="UTF-8">
+            
+            <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+            
+            <script language="javascript" type="text/javascript" src="sketch.js"></script>
+            <script language="javascript" type="text/javascript" src="boid.js"></script>
+            <script language="javascript" type="text/javascript" src="rect.js"></script>
+            <script language="javascript" type="text/javascript" src="quadtree.js"></script>
+            <script language="javascript" type="text/javascript" src="Simplex.js"></script>
+            <script language="javascript" type="text/javascript" src="Gradient.js"></script>
+            <script language="javascript" type="text/javascript" src="dat.gui.min.js"></script>
+            <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+            
+            <!-- This line removes any default padding and style.
+             You might only need one of these values set. -->
+            <link rel="stylesheet" type="text/css" href="style.css">
+                
+
+
+<script>
+    function myFunction() {
+        location.reload();
+    }
+</script>
+<!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+
+<!--<link rel="stylesheet" href="libraries/dat-gui-light-theme.css">-->
+
+<link rel="stylesheet" href="https://jcponce.github.io/assets/style/w3.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    
+<style>
+ div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+ body {
+    padding: 0;
+    margin: 0;
+}
+
+canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+</style>
+<!-- This line removes any default padding and style. You might only need one of these values set. -->
+
+</head>
+<body style="background-color:#333333;">
+
+
+<!-- Navbar Stars--
+<div class="w3-container w3-black w3-xlarge sticky">
+<div class="w3-display-topmiddle">
+    <a href="https://jcponce.github.io/#sketches" class="w3-button w3-hover-light-grey w3-opacity w3-round-xxlarge">  <i class="fas fa-arrow-circle-left"></i></a>
+&nbsp;
+<a onclick="myFunction()" class="w3-button w3-hover-light-grey w3-opacity w3-round-xxlarge">  <i class="fas fa-redo"></i></a>
+&nbsp;
+<a href="https://github.com/jcponce/jcponce.github.io/tree/master/sketches/flock" class="w3-button w3-hover-grey w3-opacity w3-round-xxlarge"> <i class="fas fa-code"></i></a>
+</div>
+</div>
+-- Navbar Ends-->
+        <!--<div id="easycamhud" class="hud unselectable">
+            <h2>Parameters</h2>
+            <div>
+                <ul id="hud-left" class="two"></ul>
+                <ul id="hud-right" class="two"></ul>
+            </div>
+        </div>-->
+        
     </body>
-  </html>
-  
+</html>
+
