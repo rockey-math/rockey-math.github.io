@@ -35,3 +35,5 @@ WEBGL VideoRecorder for p5.js - https://prossel.github.io/WebGL-VideoRecorder/
               https://www.dynamicmath.xyz/strange-attractors/
  
 * f-series: https://thecodingtrain.com/challenges/125-fourier-series 
+
+* webgl: https://webglfundamentals.org/webgl/webgl-3d-textures.html
