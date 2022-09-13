@@ -1,90 +1,85 @@
-// 6.1
-class Vehicle {
+ArrayList<Vehicle> myCar = new ArrayList<Vehicle>();
 
-  PVector location;
+void setup() {
+  size(700, 400);
+}
+
+void draw() {
+
+  background(200);
+
+  for (Vehicle v : myCar) {
+    v.seek();
+    v.display();
+  }
+}
+ 
+class Vehicle {
+  
+  PVector position;
   PVector velocity;
   PVector acceleration;
-  // Additional variable for size
   float r;
-  float maxforce;
-  float maxspeed;
+  float maxforce;    // Maximum steering force
+  float maxspeed;    // Maximum speed
 
   Vehicle(float x, float y) {
     acceleration = new PVector(0,0);
-    velocity = new PVector(0,0);
-    location = new PVector(x,y);
-    r = 3.0;
-    //[full] Arbitrary values for maxspeed and
-    // force; try varying these!
+    velocity = new PVector(0,-2);
+    position = new PVector(x,y);
+    r = 6;
     maxspeed = 4;
     maxforce = 0.1;
-    //[end]
   }
 
-  // Our standard “Euler integration” motion model
+  // Method to update position
   void update() {
+    // Update velocity
     velocity.add(acceleration);
+    // Limit speed
     velocity.limit(maxspeed);
-    location.add(velocity);
+    position.add(velocity);
+    // Reset accelerationelertion to 0 each cycle
     acceleration.mult(0);
   }
 
-  // Newton’s second law; we could divide by mass if we wanted.
   void applyForce(PVector force) {
+    // We could add mass here if we want A = F / M
     acceleration.add(force);
   }
 
-  // Our seek steering force algorithm
+  // A method that calculates a steering force towards a target
+  // STEER = DESIRED MINUS VELOCITY
   void seek(PVector target) {
-    PVector desired = PVector.sub(target,location);
-    desired.normalize();
-    desired.mult(maxspeed);
+    PVector desired = PVector.sub(target,position);  // A vector pointing from the position to the target
+    
+    // Scale to maximum speed
+    desired.setMag(maxspeed);
+
+    // Steering = Desired minus velocity
     PVector steer = PVector.sub(desired,velocity);
-    steer.limit(maxforce);
+    steer.limit(maxforce);  // Limit to maximum steering force
+    
     applyForce(steer);
   }
-
+    
   void display() {
-    // Vehicle is a triangle pointing in
-    // the direction of velocity; since it is drawn
-    // pointing up, we rotate it an additional 90 degrees.
-    float theta = velocity.heading() + PI/2;
-    fill(175);
+    // Draw a triangle rotated in the direction of velocity
+    float theta = velocity.heading2D() + PI/2;
+    //fill(127);
+    fill(255);
     stroke(0);
+    strokeWeight(1);
     pushMatrix();
-    translate(location.x,location.y);
-    rotate(theta);
-    beginShape();
-    vertex(0, -r*2);
-    vertex(-r, r*2);
-    vertex(r, r*2);
-    endShape(CLOSE);
+      translate(position.x,position.y);
+      rotate(theta);
+      beginShape();
+      vertex(0, -r*2);
+      vertex(-r, r*2);
+      vertex(r, r*2);
+      endShape(CLOSE);
     popMatrix();
+    
+    
   }
-  
- // 6.2 
-  void arrive(PVector target) {
-    PVector desired = PVector.sub(target,location);
-
-    // The distance is the magnitude of
-    // the vector pointing from
-    // location to target.
-    float d = desired.mag();
-    desired.normalize();
-    // If we are closer than 100 pixels...
-    if (d < 100) {
-      //[full] ...set the magnitude
-      // according to how close we are.
-      float m = map(d,0,100,0,maxspeed);
-      desired.mult(m);
-      //[end]
-    } else {
-      // Otherwise, proceed at maximum speed.
-      desired.mult(maxspeed);
-    }
-
-    // The usual steering = desired - velocity
-    PVector steer = PVector.sub(desired,velocity);
-    steer.limit(maxforce);
-    applyForce(steer);
-  }
+}
