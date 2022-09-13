@@ -126,9 +126,11 @@ void draw() {
   popMatrix();
   
   pushMatrix();
+    noStroke();
     fill(255);
     lights();
-    translate(sizes/2, sizes/2, 0);
+    translate(130, height/2, 0);
+    // translate(sizes/2, sizes/2, 0);
     rotateY(rotation * (PI/180));
     rotateX(rotation * (PI/180));
     // loadPixels();
