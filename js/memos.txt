@@ -3,9 +3,12 @@
   - solar system: https://www.youtube.com/watch?v=FGAwi7wpU8c
   - Coding Challenge #25: Spherical Geometry  - https://www.youtube.com/watch?v=RkuBWEkBrZA
   - Rubik's Cube Part 3 -  https://www.youtube.com/watch?v=8U2gsbNe1Uo 
+  - boids: https://natureofcode.com/book/chapter-6-autonomous-agents/
+    6.1: Autonomous Agents and Steering - The Nature of Code - https://www.youtube.com/watch?v=JIz2L4tn5kM
  
 * boids, flocking
   p5js - Coding Challenge #124: Flocking Simulation - https://www.youtube.com/watch?v=mhjuuHl6qHM
+  processing - 6.1: Autonomous Agents and Steering - The Nature of Code https://www.youtube.com/watch?v=JIz2L4tn5kM
   
 * 3D shape:
   https://library.fridoverweij.com/codelab/geometric_shapes/index.html
