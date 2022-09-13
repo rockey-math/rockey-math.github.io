@@ -39,6 +39,7 @@ int sizes = 500;
 int rotation = 0;
 */
 
+/*
 void setup() {
   size(500, 500, P3D);
 }
@@ -55,6 +56,78 @@ void draw() {
 
   box(sizes/2);
   rotation = (rotation + 1);
+}
+*/
+
+float radius = 800;
+float view_elevation = 1200;
+float target_elevation = 300;
+
+float x_eye;
+float y_eye;
+float z_eye;
+
+float x_aim;
+float y_aim;
+float z_aim;
+float h;
+float z_orientation;
+float theta;
+
+void setup() {
+  size(400, 400, P3D);
+  theta = 0;
+  h = 30;
+}
+
+void draw() {
+  
+  theta += 0.5;
+  theta = theta%360;
+  
+  x_eye = (radius+view_elevation)*cos(theta*PI/180);
+  y_eye = 0;
+  z_eye = (radius+view_elevation)*sin(theta*PI/180);
+  
+  x_aim = (radius+target_elevation)*cos((theta+h)*PI/180);
+  y_aim = 0;
+  z_aim = (radius+target_elevation)*sin((theta+h)*PI/180);
+
+  if ((x_eye- x_aim) < 0) {
+    z_orientation = 1;
+  } else {
+    z_orientation = -1;
+  }
+
+
+  camera(x_eye, y_eye, z_eye, x_aim, y_aim, z_aim, 0, 0, z_orientation);
+
+  background(255);
+  
+  pushMatrix();
+    translate(x_aim, y_aim, z_aim);
+    fill(255, 0, 0, 120);
+    noStroke();
+    sphere(10);
+  popMatrix();
+  
+  noStroke();
+  fill(205, 230, 255);
+  lights();
+  sphere(radius);
+
+  pushMatrix();
+    translate(0, 0, 10);
+    fill(255, 180, 0, 120);
+    rect(-2000, -2000, 4000, 4000);
+  popMatrix();
+  
+  pushMatrix();
+    translate(0, 0, -10);
+    fill(0, 180, 0, 120);
+    rect(-2000, -2000, 4000, 4000);
+  popMatrix();
+  
 }
 
 </script>
