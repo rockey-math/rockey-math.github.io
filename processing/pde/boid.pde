@@ -1,5 +1,6 @@
 // ArrayList<Vehicle> myCar = new ArrayList<Vehicle>();
 
+/*
 Vehicle myCar = new Vehicle(100,100);
 
 void setup() {
@@ -8,20 +9,57 @@ void setup() {
 
 void draw() {
 
-  background(200);
+  background(200);  */
 /*
   for (Vehicle v : myCar) {
     v.seek();
     v.display();
   }
   */
-  
+ 
+ /*
   myCar.display();
   myCar.seek(200, 300);
   myCar.update();
   myCar.display();
   
 }
+*/
+
+// The Nature of Code
+// Daniel Shiffman
+// http://natureofcode.com
+
+// Seeking "vehicle" follows the mouse position
+
+// Implements Craig Reynold's autonomous steering behaviors
+// One vehicle "seeks"
+// See: http://www.red3d.com/cwr/
+
+Vehicle v;
+
+void setup() {
+  size(640, 360);
+  v = new Vehicle(width/2, height/2);
+}
+
+void draw() {
+  background(255);
+
+  PVector mouse = new PVector(mouseX, mouseY);
+
+  // Draw an ellipse at the mouse position
+  fill(200);
+  stroke(0);
+  strokeWeight(2);
+  ellipse(mouse.x, mouse.y, 48, 48);
+
+  // Call the appropriate steering behaviors for our agents
+  v.seek(mouse);
+  v.update();
+  v.display();
+}
+
  
 class Vehicle {
   
