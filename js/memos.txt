@@ -5,6 +5,8 @@
   - Rubik's Cube Part 3 -  https://www.youtube.com/watch?v=8U2gsbNe1Uo 
   - boids: https://natureofcode.com/book/chapter-6-autonomous-agents/
     6.1: Autonomous Agents and Steering - The Nature of Code - https://www.youtube.com/watch?v=JIz2L4tn5kM
+    
+  - 문양/패턴 - Coding Challenge 171: Wave Function Collapse - https://www.youtube.com/watch?v=rI_y2GAlQFM  
  
 * boids, flocking
   p5js - Coding Challenge #124: Flocking Simulation - https://www.youtube.com/watch?v=mhjuuHl6qHM
