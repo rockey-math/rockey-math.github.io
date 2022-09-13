@@ -7,6 +7,25 @@
 		<h1>boid</h1>
 <!-- script type="application/processing" -->	
 		<script type="application/processing" data-processing-target="pjs">
+		
+void setup() {
+  size(700, 400);
+  stroke(0), strokeWeight(2);
+  println('hello web! This is a simple drawing example to expiriment with drawing in a processing.js environment');
+}
+
+void draw() {
+    // background
+
+    background (213, 240, 250);
+
+    // clear the frame
+    fill(194, 188, 119);
+
+    rect(0,250,399,149);
+}
+ 
+ 
 class Vehicle {
   
   PVector position;
@@ -79,7 +98,7 @@ class Vehicle {
 		</script>
 
 		<!-- canvas id="sketch" data-processing-sources="./pde/arrow.pde"></canvas -->
-    <canvas id="sketch"></canvas>
+		<canvas id="pjs"> </canvas>
 		<p id="label"></p>
 	</body>
 </html>
