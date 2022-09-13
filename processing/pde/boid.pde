@@ -1,6 +1,6 @@
 // ArrayList<Vehicle> myCar = new ArrayList<Vehicle>();
 
-/*
+
 Vehicle myCar = new Vehicle(100,100);
 
 void setup() {
@@ -9,7 +9,7 @@ void setup() {
 
 void draw() {
 
-  background(200);  */
+  background(200);  
 /*
   for (Vehicle v : myCar) {
     v.seek();
@@ -17,14 +17,14 @@ void draw() {
   }
   */
  
- /*
-  myCar.display();
-  myCar.seek(200, 300);
+ 
+  // myCar.display();
+  myCar.seek(400, 300);
   myCar.update();
   myCar.display();
   
 }
-*/
+
 
 // The Nature of Code
 // Daniel Shiffman
@@ -36,6 +36,7 @@ void draw() {
 // One vehicle "seeks"
 // See: http://www.red3d.com/cwr/
 
+/*
 Vehicle v;
 
 void setup() {
@@ -59,7 +60,7 @@ void draw() {
   v.update();
   v.display();
 }
-
+*/
  
 class Vehicle {
   
