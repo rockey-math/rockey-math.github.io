@@ -1,0 +1,40 @@
+<html>
+  <header>
+    <script source='https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.0/processing.min.js'></script>
+  </header>
+  <body>
+    
+
+<script type="application/processing">
+size(300, 300);
+
+background(64);
+
+fill(255, 0, 0);
+
+beginShape();
+curveVertex(width/2, height*2);
+curveVertex(width/2, height*.9);
+curveVertex(width*.1, height/2);
+curveVertex(width/4, height/4);
+curveVertex(width/2, height/3);
+curveVertex(width/2, height);
+endShape();
+
+beginShape();
+curveVertex(width/2, height);
+curveVertex(width/2, height/3);
+curveVertex(width*.75, height/4);
+curveVertex(width*.9, height/2);
+curveVertex(width/2, height*.9);
+curveVertex(width/2, height*2);
+
+endShape();
+</script>
+<canvas> </canvas>
+
+
+  </body>
+</html>
+
+    
