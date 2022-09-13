@@ -8,7 +8,6 @@ void setup() {
 }
 
 void draw() {
-
   background(200);  
 /*
   for (Vehicle v : myCar) {
@@ -16,13 +15,15 @@ void draw() {
     v.display();
   }
   */
- 
- 
-  // myCar.display();
-  myCar.seek(400, 300);
-  myCar.update();
-  myCar.display();
   
+  // myCar.display();
+  PVector target;
+  target.x=400;
+  target.y=300;
+  myCar.seek(target);
+  
+  myCar.update();
+  myCar.display(); 
 }
 
 
