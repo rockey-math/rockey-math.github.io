@@ -1,3 +1,28 @@
+// ArrayList<Vehicle> myCar = new ArrayList<Vehicle>();
+
+Vehicle myCar = new Vehicle(100,100);
+
+void setup() {
+  size(700, 400);
+}
+
+void draw() {
+
+  background(200);
+/*
+  for (Vehicle v : myCar) {
+    v.seek();
+    v.display();
+  }
+  */
+  
+  myCar.display();
+  myCar.seek(200, 300);
+  myCar.update();
+  myCar.display();
+  
+}
+
 // The Nature of Code
 // Daniel Shiffman
 // https://raw.githubusercontent.com/nature-of-code/noc-examples-processing/master/chp06_agents/NOC_6_01_Seek_trail/Vehicle.pde
@@ -60,6 +85,7 @@ class Vehicle {
   }
     
   void display() {
+
     beginShape();
     stroke(0);
     strokeWeight(1);
