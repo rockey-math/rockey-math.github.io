@@ -17,9 +17,9 @@ void draw() {
   */
   
   // myCar.display();
-  PVector target; // = new PVector(300,200);
-  target.x=300;
-  target.y=200;
+  PVector target = new PVector(300,200);
+  //target.x=300;  wrong!
+  //target.y=200;
   console.log("target =", target);
   myCar.seek(target);
   
