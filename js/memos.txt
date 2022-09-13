@@ -3,6 +3,9 @@
   - solar system: https://www.youtube.com/watch?v=FGAwi7wpU8c
   - Coding Challenge #25: Spherical Geometry  - https://www.youtube.com/watch?v=RkuBWEkBrZA
   - Rubik's Cube Part 3 -  https://www.youtube.com/watch?v=8U2gsbNe1Uo 
+ 
+* boids, flocking
+  p5js - Coding Challenge #124: Flocking Simulation - https://www.youtube.com/watch?v=mhjuuHl6qHM
   
 * 3D shape:
   https://library.fridoverweij.com/codelab/geometric_shapes/index.html
