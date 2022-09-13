@@ -1,4 +1,6 @@
-ArrayList<Vehicle> myCar = new ArrayList<Vehicle>();
+// ArrayList<Vehicle> myCar = new ArrayList<Vehicle>();
+
+Vehicle myCar = new Vehicle(100,100);
 
 void setup() {
   size(700, 400);
@@ -7,11 +9,14 @@ void setup() {
 void draw() {
 
   background(200);
-
+/*
   for (Vehicle v : myCar) {
     v.seek();
     v.display();
   }
+  */
+  myCar.display();
+  
 }
  
 class Vehicle {
