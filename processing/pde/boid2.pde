@@ -102,13 +102,14 @@ class Vehicle {
     stroke(0);
     strokeWeight(1);
     pushMatrix();
-    translate(position.x,position.y);
-    rotate(theta);
-    beginShape();
-    vertex(0, -r*2);
-    vertex(-r, r*2);
-    vertex(r, r*2);
-    endShape(CLOSE);
+      translate(position.x,position.y);
+      rotate(theta);
+      println('theta = ' + theta*180/PI);
+      beginShape();
+        vertex(0, -r*2);
+        vertex(-r, r*2);
+        vertex(r, r*2);
+      endShape(CLOSE);
     popMatrix();
     
     
