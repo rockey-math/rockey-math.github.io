@@ -20,6 +20,7 @@ void draw() {
   PVector target; // = new PVector(300,200);
   target.x=300;
   target.y=200;
+  console.log("target =", target);
   myCar.seek(target);
   
   myCar.update();
