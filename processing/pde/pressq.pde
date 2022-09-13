@@ -1,3 +1,4 @@
+// https://stackoverflow.com/questions/26318719/how-to-create-a-new-instance-of-a-class-in-processing
 ArrayList<Place> turret = new ArrayList<Place>();
 
 void setup()
