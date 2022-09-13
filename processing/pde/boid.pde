@@ -71,8 +71,8 @@ class Vehicle {
     stroke(0);
     strokeWeight(1);
     pushMatrix();
-      // translate(position.x,position.y);
-      translate(100,100);
+      translate(position.x,position.y);
+      // translate(100,100);
       rotate(theta);
       beginShape();
       vertex(0, -r*2);
