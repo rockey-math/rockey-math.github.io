@@ -15,7 +15,10 @@ void draw() {
     v.display();
   }
   */
+  
   myCar.display();
+  myCar.seek(200);
+  
   
 }
  
