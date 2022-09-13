@@ -1,0 +1,98 @@
+<script src="processing.js"></script>
+<script type="application/processing" data-processing-target="pjs">
+void setup() {
+  size(400, 400);
+  stroke(0), strokeWeight(2);
+  println('hello web! This is a simple drawing example to expiriment with drawing in a processing.js environment');
+}
+void draw() {
+ 
+
+var hoodX=195;
+
+var hoodY= 149;
+
+var tWidth = 38;
+
+var tHeight= 48;
+
+var tX= 200;
+
+
+
+// background
+
+
+
+background (213, 240, 250);
+
+ // clear the frame
+    fill(194, 188, 119);
+
+    rect(0,250,399,149);
+
+
+
+
+
+//cobra hood
+
+
+
+    fill(152, 179, 95);
+
+    ellipse(hoodX, hoodY, 144, 147);
+
+
+    fill(51, 51, 51);
+    
+ellipse(195, 160, 144, 63);
+
+
+
+//lower body tail
+ 
+
+
+    ellipse(265,266,234,18);
+ 
+ 
+    ellipse(225,292,210,54);
+
+ 
+    ellipse(247,296,134,46);
+
+
+
+
+//upper body(tail)
+
+    ellipse(tX, 137, tWidth, tHeight);
+
+    ellipse(tX, 222, tWidth, tHeight);
+
+    ellipse(tX, 288, tWidth, tHeight);
+    
+ellipse(tX, 165, tWidth, tHeight);
+    
+ellipse(tX, 193, tWidth, tHeight);
+    
+ellipse(tX, 252, tWidth, tHeight);
+
+
+
+//head
+
+
+    fill(49, 48, 51);
+    
+ellipse(200, 105, 64, 55);
+
+
+    fill(152, 179, 95);
+
+    quad(173,82,191,124,213,124,229,84);
+
+}
+</script>
+<canvas id="pjs"> </canvas>
