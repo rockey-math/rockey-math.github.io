@@ -78,7 +78,7 @@ float z_orientation;
 float theta;
 
 int rotation = 0;
-int sizes = 400;
+int sizes = 100;
 
 void setup() {
   size(400, 400, P3D);
@@ -142,8 +142,8 @@ void draw() {
   translate(sizes/2, sizes/2, 0);
   rotateY(rotation * (PI/180));
   rotateX(rotation * (PI/180));
-  loadPixels();
-  for(int i = 0; i < pixels.length; i++) pixels[i] = color(0);
+  //loadPixels();
+  //for(int i = 0; i < pixels.length; i++) pixels[i] = color(0);
   box(sizes/2);
   rotation = (rotation + 1);
   
