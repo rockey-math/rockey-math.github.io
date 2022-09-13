@@ -17,7 +17,7 @@ void draw() {
   */
   
   myCar.display();
-  myCar.seek(200);
+  myCar.seek(200, 300);
   myCar.update();
   myCar.display();
   
