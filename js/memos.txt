@@ -1,6 +1,8 @@
-* processing- picture https://www.youtube.com/watch?v=Y1D-0whVBac
+* processing- 
+  - picture https://www.youtube.com/watch?v=Y1D-0whVBac
   - solar system: https://www.youtube.com/watch?v=FGAwi7wpU8c
   - Coding Challenge #25: Spherical Geometry  - https://www.youtube.com/watch?v=RkuBWEkBrZA
+  - Rubik's Cube Part 3 -  https://www.youtube.com/watch?v=8U2gsbNe1Uo 
   
 * 3D shape:
   https://library.fridoverweij.com/codelab/geometric_shapes/index.html
