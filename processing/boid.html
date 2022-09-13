@@ -7,44 +7,22 @@
 		<script type="application/processing" data-processing-target="pjs">
 // https://processing.org/tutorials/objects
 
-Vehicle myCar;
+
+ArrayList<Vehicle> myCar = new ArrayList<Vehicle>();
 
 void setup() {
   size(700, 400);
-  // stroke(0), strokeWeight(2);
-  
-  myCar = new Vehicle();
-  
 }
 
 void draw() {
-    // background
 
-    background(0);
-    
-    float theta = velocity.heading2D() + PI/2;
-    //fill(127);
-    fill(255);
-    stroke(0);
-    strokeWeight(1);
-    pushMatrix();
-      translate(100,100);
-      rotate(theta);
-      beginShape();
-      vertex(0, -6*2);
-      vertex(-6, r*2);
-      vertex(6, 6*2);
-      endShape(CLOSE);
-    popMatrix();
-    
-    myCar.display();
-    
-    // clear the frame
-    // fill(194, 188, 119);
+  background(200);
 
-    // rect(0,250,399,149);
+  for (Vehicle v : myCar) {
+    v.seek();
+    v.display();
+  }
 }
- 
  
 class Vehicle {
   
