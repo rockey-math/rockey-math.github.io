@@ -17,9 +17,9 @@ void draw() {
   */
   
   // myCar.display();
-  PVector target = new PVector(300,200);
-  //target.x=400;
-  //target.y=300;
+  PVector target; // = new PVector(300,200);
+  target.x=300;
+  target.y=200;
   myCar.seek(target);
   
   myCar.update();
