@@ -1,4 +1,15 @@
 
+    void setup() {
+      size(600,600,P3D);
+
+    }
+    
+    void draw() {
+      cylinder(300.,100., 150., 3);
+
+    }
+    
+    
     /**
     cylinder taken from http://wiki.processing.org/index.php/Cylinder
     @author matt ditton
