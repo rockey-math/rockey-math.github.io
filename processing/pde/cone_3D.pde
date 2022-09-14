@@ -6,7 +6,7 @@
     }
     
     void draw() {
-      cylinder(300.,300.0., 150., 6);
+//      cylinder(300.,300.0., 150., 6);
      
 translate(width/2, height/2, 0);
 stroke(255);
