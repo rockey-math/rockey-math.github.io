@@ -15,8 +15,8 @@ void setup() {
   size(1800, 540);
   // Make a new flow field with "resolution" of 16
   flowfield = new FlowField(60);
-  arrow = loadShape("arrow.svg");
-  a = loadImage("arrow60.png");
+  arrow = loadShape("./data/arrow.svg");
+  a = loadImage("./data/arrow60.png");
 }
 
 void draw() {
@@ -24,7 +24,7 @@ void draw() {
   // Display the flowfield in "debug" mode
   translate(30,30);
   flowfield.display();
-  saveFrame("ch6_exc6.png");
+  saveFrame("./data/ch6_exc6.png");
   noLoop();
 }
 // Make a new flowfield
