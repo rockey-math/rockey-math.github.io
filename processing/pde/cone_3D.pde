@@ -1,15 +1,11 @@
 
     void setup() {
       size(600,600,P3D);
-      background(0);
-
     }
     
     void draw() {
-    // translate(width/2, height/2, 0);
-    // stroke(255);
-    cylinder(30.,30.0., 50., 6);
-
+    transate(200,200);
+    cylinder(100.0,30.0., 250.0, 6);
     }
     
     
