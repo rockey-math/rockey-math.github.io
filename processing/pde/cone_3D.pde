@@ -27,7 +27,7 @@
        rotateX(rotation1 * (PI/180));
        rotateZ(rotation1 * (PI/180));
        arrow3D(20.0, 0, 250.0, 6);
-       rotation = (rotation1 + 0.2);
+       rotation1 = (rotation1 + 0.2);
       popMatrix();  
       
       pushMatrix();
@@ -42,7 +42,7 @@
        rotateX(rotation2 * (PI/180));
        rotateZ(rotation2 * (PI/180));
        sphere(250.0);
-       rotation = (rotation2 + 0.1);
+       rotation2 = (rotation2 + 0.1);
       popMatrix();
   
       
