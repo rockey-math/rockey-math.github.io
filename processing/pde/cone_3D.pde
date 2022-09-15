@@ -2,11 +2,11 @@
     
     void setup() {
       size(600,600,P3D);
-      background(0);
-      // println(mouseX, " ", mouseY);
+      // background(0);
     }
     
     void draw() {
+      background(0);
       translate(width/2, height/2);
       println(mouseX);
       println(mouseY);
