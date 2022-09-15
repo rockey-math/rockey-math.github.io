@@ -15,7 +15,7 @@
       
       // rotateZ(-3*PI/4); // 오른쪽 핸디드가 아니라 모니터방향을 따르다보니 이상해짐. 반대로 됨. 
       // rotateX(PI/4);
-      // arrow3D(20.0, 0, 250.0, 6); // 헤드 바텀  직경, 헤드 탑 직경, 몸통은 헤드 바텀 직경의 절반, 몸통 길이, 실린더 다각형 꼭지점수 
+      // arrow3D(10.0, 0, 100.0, 6); // 헤드 바텀  직경, 헤드 탑 직경, 몸통은 헤드 바텀 직경의 절반, 몸통 길이, 실린더 다각형 꼭지점수 
       
       
       pushMatrix();
@@ -26,7 +26,7 @@
        rotateY(rotation1 * (PI/180));
        rotateX(rotation1 * (PI/180));
        rotateZ(rotation1 * (PI/180));
-       arrow3D(20.0, 0, 250.0, 6);
+       arrow3D(10.0, 0, 100.0, 6);
        rotation1 = (rotation1 + 0.2);
       popMatrix();  
       
@@ -41,7 +41,7 @@
        rotateY(rotation2 * (PI/180));
        rotateX(rotation2 * (PI/180));
        rotateZ(rotation2 * (PI/180));
-       sphere(250.0);
+       sphere(100.0);
        rotation2 = (rotation2 + 0.1);
       popMatrix();
   
