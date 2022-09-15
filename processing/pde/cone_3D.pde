@@ -17,8 +17,8 @@
       
       
       pushMatrix();
-       // noStroke();
-       // fill(255);
+       noStroke();
+       fill(255);
        // lights();
        // translate(130, height/2, 0);
        rotateY(rotation * (PI/180));
