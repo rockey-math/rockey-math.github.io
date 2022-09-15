@@ -1,4 +1,6 @@
-    int rotation = 0;
+    int rotation1 = 0;
+    int rotation2 = 0;
+    
     
     void setup() {
       size(600,600,P3D);
@@ -18,14 +20,14 @@
       
       pushMatrix();
        noStroke();
-       fill(255);
+       fill(400);
        lights();
        // translate(130, height/2, 0);
-       rotateY(rotation * (PI/180));
-       rotateX(rotation * (PI/180));
-       rotateZ(rotation * (PI/180));
+       rotateY(rotation1 * (PI/180));
+       rotateX(rotation1 * (PI/180));
+       rotateZ(rotation1 * (PI/180));
        arrow3D(20.0, 0, 250.0, 6);
-       rotation = (rotation + 0.2);
+       rotation = (rotation1 + 0.2);
       popMatrix();  
       
       pushMatrix();
@@ -36,11 +38,11 @@
        stroke(255);
        // translate(50, height*0.35, -200);
        // translate(0, 0, -50);
-       rotateY(rotation * (PI/180));
-       rotateX(rotation * (PI/180));
-       rotateZ(rotation * (PI/180));
+       rotateY(rotation2 * (PI/180));
+       rotateX(rotation2 * (PI/180));
+       rotateZ(rotation2 * (PI/180));
        sphere(250.0);
-       rotation = (rotation + 0.1);
+       rotation = (rotation2 + 0.1);
       popMatrix();
   
       
