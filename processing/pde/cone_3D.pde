@@ -32,7 +32,7 @@
       
       pushMatrix();
        noStroke();
-       fill(205, 230, 255);
+       fill(205, 230, 255, 200);
        lights();
        // noFill();
        // stroke(255);
