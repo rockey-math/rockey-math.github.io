@@ -27,7 +27,9 @@
         float lhead = h/10;
         float lbody = h/10*9;
         
-        translate(0,lbody/2,0);
+        // translate(0,lbody/2,0);
+        translate(0,-lbody,0);
+        
       
         float angle;
         float[] x = new float[sides+1];
@@ -37,6 +39,7 @@
         
         float[] x3 = new float[sides+1];
         float[] z3 = new float[sides+1];
+        
         //////////////////////////////////////////////
         //get the x and z position on a circle for all the sides
         for(int i=0; i < x3.length; i++){
