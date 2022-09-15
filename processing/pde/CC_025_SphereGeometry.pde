@@ -21,11 +21,12 @@ void setup() {
 void draw() {
   translate(width/2, height/2);
   
-  background(0);
+  
   // noStroke();
   // lights();
-  noFill();
-  stroke(255);
+  
+  // noFill();
+  // stroke(255);
   
   rotateX(PI/180*45);
   
@@ -46,6 +47,10 @@ void draw() {
     // fill(hu  % 255, 255, 255);
     beginShape(TRIANGLE_STRIP);
     for (int j = 0; j < total+1; j++) {
+      background(0);
+      noFill();
+      stroke(255);
+      
       PVector v1 = globe[i][j];
       vertex(v1.x, v1.y, v1.z);
       PVector v2 = globe[i+1][j];
