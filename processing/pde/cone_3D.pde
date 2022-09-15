@@ -31,11 +31,11 @@
       popMatrix();  
       
       pushMatrix();
-       noStroke();
-       fill(205, 230, 255, 200);
-       lights();
-       // noFill();
-       // stroke(255);
+       // noStroke();
+       // fill(205, 230, 255, 200);
+       // lights();
+       noFill();
+       stroke(255);
        // translate(50, height*0.35, -200);
        // translate(0, 0, -50);
        // rotateY(rotation2 * (PI/180));
