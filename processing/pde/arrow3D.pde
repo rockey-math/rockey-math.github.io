@@ -29,14 +29,13 @@
        stroke(0,0,0);
        line(cc_x1,cc_y1,cc_z1,cc_x2,cc_y2,cc_z2);
       
-      pushMatrix();
-     
+       pushMatrix();
         translate(cc_x2, cc_y2);
         float a = atan2(cc_x1-cc_x2, cc_y2-cc_y1);
         stroke(173,139,255);
         rotate(a);  
         line(0, 0,cc_z1, -0.25, -0.25,cc_z2);
         line(0, 0,cc_z1, 0.25, -0.25,cc_z2);
-        popMatrix();
+       popMatrix();
       }
     }
