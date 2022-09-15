@@ -24,7 +24,10 @@
     {
       pushMatrix();
       
-        translate(0,h/2,0);
+        float lhead = h/10;
+        float lbody = h/10*9;
+        
+        translate(0,lbody/2,0);
       
         float angle;
         float[] x = new float[sides+1];
@@ -43,27 +46,27 @@
         }
         //draw the bottom of the cylinder
         beginShape(TRIANGLE_FAN); 
-          vertex(0,   -h/2,    0);    
+          vertex(0,   -lbody/2,    0);    
           for(int i=0; i < x3.length; i++){
-            vertex(x3[i], -h/2, z3[i]);
+            vertex(x3[i], -lbody/2, z3[i]);
           }    
         endShape();
         //draw the center of the cylinder
         beginShape(QUAD_STRIP);    
           for(int i=0; i < x3.length; i++){
-            vertex(x3[i], -h/2, z3[i]);
-            vertex(x3[i], h/2, z3[i]);
+            vertex(x3[i], -lbody/2, z3[i]);
+            vertex(x3[i], lbody/2, z3[i]);
           }    
         endShape();
         //draw the top of the cylinder
         beginShape(TRIANGLE_FAN);   
-          vertex(0,   h/2,    0);    
+          vertex(0,   lbody/2,    0);    
           for(int i=0; i < x3.length; i++){
-            vertex(x3[i], h/2, z3[i]);
+            vertex(x3[i], lbody/2, z3[i]);
           }
         endShape();
         ///////////////////////////
-     /*
+     
         //get the x and z position on a circle for all the sides
         for(int i=0; i < x.length; i++){
           angle = TWO_PI / (sides) * i;
@@ -77,25 +80,25 @@
         }
         //draw the bottom of the cylinder
         beginShape(TRIANGLE_FAN); 
-          vertex(0,   -h/2,    0);    
+          vertex(0,   (lbody-lhead)/2,    0);    
           for(int i=0; i < x.length; i++){
-            vertex(x[i], -h/2, z[i]);
+            vertex(x[i], (lbody-lhead)/2, z[i]);
           }    
         endShape();
         //draw the center of the cylinder
         beginShape(QUAD_STRIP);    
           for(int i=0; i < x.length; i++){
-            vertex(x[i], -h/2, z[i]);
-            vertex(x2[i], h/2, z2[i]);
+            vertex(x[i], (lbody-lhead)/2, z[i]);
+            vertex(x2[i], (lbody+lhead)/2, z2[i]);
           }    
         endShape();
         //draw the top of the cylinder
         beginShape(TRIANGLE_FAN);   
-          vertex(0,   h/2,    0);    
+          vertex(0,   (lbody+lhead)/2,    0);    
           for(int i=0; i < x.length; i++){
-            vertex(x2[i], h/2, z2[i]);
+            vertex(x2[i], (lbody+lhead)/2, z2[i]);
           }
         endShape();
-       */ 
+        
       popMatrix();
     }
