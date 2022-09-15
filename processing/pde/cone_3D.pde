@@ -5,7 +5,7 @@
     
     void draw() {
       //translate(200,200, 0);
-      cylinder(100.0, 30.0.,250.0, 6);
+      cylinder(100.0, 30.0,250.0, 6);
     }
     
     
