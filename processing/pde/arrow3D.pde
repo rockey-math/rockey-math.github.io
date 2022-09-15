@@ -30,12 +30,14 @@
        line(cc_x1,cc_y1,cc_z1,cc_x2,cc_y2,cc_z2);
       
        pushMatrix();
-        translate(cc_x2, cc_y2,cc_z1 );
+        translate(cc_x2, cc_y2, cc_z2 );
         float a = atan2(cc_x1-cc_x2, cc_y2-cc_y1);
         stroke(173,139,255);
         rotate(a);  
-        line(0, 0,cc_z1, -0.25, -0.25,cc_z2);
-        line(0, 0,cc_z1, 0.25, -0.25,cc_z2);
+        // line(0, 0,cc_z1, -0.25, -0.25,cc_z2);
+        // line(0, 0,cc_z1, 0.25, -0.25,cc_z2);
+        line(cc_x2 + 0, cc_y2+ 0,cc_z2, cc_x2-0.25, cc_y2-0.25,cc_z2);
+        line(cc_x2 + 0, cc_y2 + 0,cc_z2, cc_x2 + 0.25, cc_y2 - 0.25,cc_z2);
        popMatrix();
       }
     }
