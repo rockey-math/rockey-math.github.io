@@ -50,7 +50,7 @@
     }
     
     
-    
+ /*   
     // fibonacci sphere
     float goldenRatio = ( 1 + sqrt(5) )/2;
     float angleIncrement = TAU * goldenRatio; 
@@ -61,14 +61,24 @@
       float angle2 = angleIncrement * i;
       
       float x = sin(angle1) * cos(angle2);
-      float x = sin(angle1) * sin(angle2);
+      float y = sin(angle1) * sin(angle2);
       float z = cos(angle1); 
       PVector pointOnSphere = new PVector(x,y,z);
     }  
 
 
-
-
+    // u,v sphere
+ 
+    for (int v=0; v <= numVerticalSegments; v++) {
+        float angle1 = (h+1) * PI / (numHorizontalSegments + 1); 
+        for (int v=0; v <= numVerticalSegments; v++) {
+            float angle2 = v * TAU / numVerticalSegments; 
+            float x = sin(angle1) * cos(angle2);
+            float z = sin(angle1) * sin(angle2);
+            float y = cos(angle1); 
+            PVector pointOnSphere = new PVector(x,y,z);
+        }  
+*/
      
     void arrow3D(float bottom, float top, float h, int sides)
     {
