@@ -47,6 +47,7 @@ void draw() {
     // fill(hu  % 255, 255, 255);
     // beginShape(TRIANGLE_STRIP);
     beginShape(POINTS);
+    rotateX(PI/180*45);
     for (int j = 0; j < total+1; j++) {
       background(0);
       noFill();
