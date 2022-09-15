@@ -24,10 +24,10 @@
        // lights();
        // translate(130, height/2, 0);
        rotateY(rotation1 * (PI/180));
-       rotateX(rotation1 * (PI/180));
+       // rotateX(rotation1 * (PI/180));
        rotateZ(rotation1 * (PI/180));
        arrow3D(10.0, 0, 100.0, 6);
-       rotation1 = (rotation1 + 0.2);
+       rotation1 = (rotation1 + 1);
       popMatrix();  
       
       pushMatrix();
