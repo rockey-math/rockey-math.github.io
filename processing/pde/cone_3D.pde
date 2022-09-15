@@ -9,8 +9,8 @@
       println(mouseX);
       println(mouseY);
       
-      //rotateZ(PI/4);
-      //rotateX(-PI/4);
+      rotateZ(-3*PI/4);
+      rotateX(-PI/4);
       cylinder(30.0, 1.0, 250.0, 6);
       
     }
