@@ -68,8 +68,7 @@
 
 
     // u,v sphere
- 
-    for (int v=0; v <= numVerticalSegments; v++) {
+    for (int h=0; h < numHorizontalSegments; h++) {
         float angle1 = (h+1) * PI / (numHorizontalSegments + 1); 
         for (int v=0; v <= numVerticalSegments; v++) {
             float angle2 = v * TAU / numVerticalSegments; 
