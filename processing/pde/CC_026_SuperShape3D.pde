@@ -3,9 +3,9 @@
 // http://patreon.com/codingtrain
 // Code for: https://youtu.be/akM4wMZIBWg
 
-import peasy.*;
+// import peasy.*;
 
-PeasyCam cam;
+// PeasyCam cam;
 
 PVector[][] globe;
 int total = 75;
@@ -18,8 +18,8 @@ float mchange = 0;
 
 void setup() {
   size(600, 600, P3D);
-  cam = new PeasyCam(this, 500);
-  colorMode(HSB);
+  // cam = new PeasyCam(this, 500);
+  // colorMode(HSB);
   globe = new PVector[total+1][total+1];
 }
 
@@ -42,8 +42,8 @@ void draw() {
   mchange += 0.02;
   
   background(0);
-  noStroke();
-  lights();
+  // noStroke();
+  // lights();
   float r = 200;
   for (int i = 0; i < total+1; i++) {
     float lat = map(i, 0, total, -HALF_PI, HALF_PI);
