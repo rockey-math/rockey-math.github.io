@@ -40,8 +40,8 @@ void draw() {
   }
 
   for (int i = 0; i < total; i++) {
-    float hu = map(i, 0, total, 0, 255*6);
-    fill(hu  % 255, 255, 255);
+    // float hu = map(i, 0, total, 0, 255*6);
+    // fill(hu  % 255, 255, 255);
     beginShape(TRIANGLE_STRIP);
     for (int j = 0; j < total+1; j++) {
       PVector v1 = globe[i][j];
