@@ -5,7 +5,7 @@
     
     void draw() {
       translate(width/2, height/2);
-      printlin(mouseX + " " + mouseY);
+      printlin(mouseX, " ", mouseY);
       
       //rotateZ(PI/4);
       //rotateX(-PI/4);
