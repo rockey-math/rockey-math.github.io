@@ -8,8 +8,8 @@
     void draw() {
       background(0);
       translate(width/2, height/2);
-      println(mouseX);
-      println(mouseY);
+      // println(mouseX);
+      // println(mouseY);
       
       // rotateZ(-3*PI/4); // 오른쪽 핸디드가 아니라 모니터방향을 따르다보니 이상해짐. 반대로 됨. 
       // rotateX(PI/4);
@@ -23,8 +23,9 @@
        // translate(130, height/2, 0);
        rotateY(rotation * (PI/180));
        rotateX(rotation * (PI/180));
+       rotateZ(rotation * (PI/180));
        arrow3D(20.0, 0, 250.0, 6);
-       rotation = (rotation + 1);
+       rotation = (rotation + 0.1);
       popMatrix();  
       
     }
