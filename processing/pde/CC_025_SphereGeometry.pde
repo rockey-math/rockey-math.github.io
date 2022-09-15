@@ -14,14 +14,16 @@ int total = 75;
 void setup() {
   size(600, 600, P3D);
   // cam = new PeasyCam(this, 500);
-  colorMode(HSB);
+  // colorMode(HSB);
   globe = new PVector[total+1][total+1];
 }
 
 void draw() {
+  translate(width/2, height/2);
+  
   background(0);
   noStroke();
-  lights();
+  // lights();
   float r = 200;
   for (int i = 0; i < total+1; i++) {
     float lat = map(i, 0, total, 0, PI);
