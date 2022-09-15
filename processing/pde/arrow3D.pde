@@ -30,7 +30,7 @@
        line(cc_x1,cc_y1,cc_z1,cc_x2,cc_y2,cc_z2);
       
        pushMatrix();
-        translate(cc_x2, cc_y2);
+        translate(cc_x2, cc_y2,cc_z1 );
         float a = atan2(cc_x1-cc_x2, cc_y2-cc_y1);
         stroke(173,139,255);
         rotate(a);  
