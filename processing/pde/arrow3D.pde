@@ -13,10 +13,10 @@
       another.drawarrow();
     }
     
-    public class Arrow {
+    class Arrow {
       float cc_x1, cc_y1, cc_z1, cc_x2, cc_y2, cc_z2;
      
-      public Arrow (float x1, float y1,float z1, float x2, float y2,float z2) {
+      Arrow (float x1, float y1,float z1, float x2, float y2,float z2) {
         cc_x1 = x1;
         cc_y1 = y1;
         cc_z1 = z1;
@@ -25,7 +25,7 @@
         cc_z2 = z2;
       }
      
-      public void drawarrow() {
+      void drawarrow() {
        stroke(0,0,0);
        line(cc_x1,cc_y1,cc_z1,cc_x2,cc_y2,cc_z2);
       
