@@ -19,7 +19,8 @@ void setup() {
 }
 
 void draw() {
-  translate(width/2, height/2);
+ background(0);
+ translate(width/2, height/2);
   
   
   // noStroke();
@@ -49,7 +50,7 @@ void draw() {
     beginShape(POINTS);
     rotateX(PI/180*45);
     for (int j = 0; j < total+1; j++) {
-      background(0);
+     
       noFill();
       stroke(255);
       
