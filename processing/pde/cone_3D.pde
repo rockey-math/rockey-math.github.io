@@ -4,10 +4,10 @@
     }
     
     void draw() {
-      translate(200,200, 0);
+      translate(width/2, height/2);
+      rotateZ(PI/4);
+      rotateX(-PI/4);
       cylinder(30.0, 1.0, 250.0, 6);
-      rotateZ(TWO_PI/4);
-      rotateX(-TWO_PI/4);
     }
     
     
