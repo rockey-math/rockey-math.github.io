@@ -1,12 +1,12 @@
     void setup() {
       size(600,600,P3D);
       background(0);
-      // printlin(mouseX, " ", mouseY);
+      // println(mouseX, " ", mouseY);
     }
     
     void draw() {
       translate(width/2, height/2);
-      printlin(mouseX, " ", mouseY);
+      println(mouseX, " ", mouseY);
       
       //rotateZ(PI/4);
       //rotateX(-PI/4);
