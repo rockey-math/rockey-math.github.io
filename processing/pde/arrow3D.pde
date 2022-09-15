@@ -5,12 +5,12 @@
     void setup() {
       size(400,400,P3D);
       arrow = new Arrow(80,55,10,175,65,45);
-      another = new Arrow(90,100,10,175,150,200);
+      // another = new Arrow(90,100,10,175,150,200);
     }
     
     void draw() {
       arrow.drawarrow();
-      another.drawarrow();
+      // another.drawarrow();
     }
     
     class Arrow {
