@@ -6,8 +6,8 @@
     void draw() {
       translate(200,200, 0);
       cylinder(30.0, 1.0, 250.0, 6);
-      rotateZ(PI/4);
-      rotateX(-PI/4);
+      rotateZ(TWO_PI/4);
+      rotateX(-TWO_PI/4);
     }
     
     
