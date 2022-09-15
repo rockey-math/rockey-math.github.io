@@ -1,3 +1,5 @@
+    int rotation = 0;
+    
     void setup() {
       size(600,600,P3D);
       background(0);
@@ -9,9 +11,21 @@
       println(mouseX);
       println(mouseY);
       
-      rotateZ(-3*PI/4); // 오른쪽 핸디드가 아니라 모니터방향을 따르다보니 이상해짐. 반대로 됨. 
-      rotateX(PI/4);
-      arrow3D(20.0, 0, 250.0, 6); // 헤드 바텀  직경, 헤드 탑 직경, 몸통은 헤드 바텀 직경의 절반, 몸통 길이, 실린더 다각형 꼭지점수 
+      // rotateZ(-3*PI/4); // 오른쪽 핸디드가 아니라 모니터방향을 따르다보니 이상해짐. 반대로 됨. 
+      // rotateX(PI/4);
+      // arrow3D(20.0, 0, 250.0, 6); // 헤드 바텀  직경, 헤드 탑 직경, 몸통은 헤드 바텀 직경의 절반, 몸통 길이, 실린더 다각형 꼭지점수 
+      
+      
+      pushMatrix();
+       // noStroke();
+       // fill(255);
+       // lights();
+       // translate(130, height/2, 0);
+       rotateY(rotation * (PI/180));
+       rotateX(rotation * (PI/180));
+       arrow3D(20.0, 0, 250.0, 6);
+       rotation = (rotation + 1);
+      popMatrix();  
       
     }
     
