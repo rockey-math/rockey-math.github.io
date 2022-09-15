@@ -9,7 +9,7 @@
 // PeasyCam cam;
 
 PVector[][] globe;
-int total = 25;
+int total = 75;
 
 void setup() {
   size(600, 600, P3D);
