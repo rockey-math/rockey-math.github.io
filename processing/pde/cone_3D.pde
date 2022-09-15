@@ -28,6 +28,22 @@
        rotation = (rotation + 0.1);
       popMatrix();  
       
+      pushMatrix();
+       // noStroke();
+       // fill(205, 230, 255);
+       // lights();
+       noFill();
+       stroke(255);
+       // translate(50, height*0.35, -200);
+       // translate(0, 0, -50);
+       rotateY(rotation * (PI/180));
+       rotateX(rotation * (PI/180));
+       rotateZ(rotation * (PI/180));
+       sphere(250.0);
+       rotation = (rotation + 0.1);
+      popMatrix();
+  
+      
     }
     
     
