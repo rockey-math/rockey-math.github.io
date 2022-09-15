@@ -42,6 +42,8 @@ void draw() {
   // lights();
   
   translate(width/2, height/2);
+  rotateZ(-45*PI/180);
+  rotateX(-90*PI/180);
  
   noFill();
   stroke(255);
