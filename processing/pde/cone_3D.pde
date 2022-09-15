@@ -51,6 +51,11 @@
     
     
  /*   
+ 
+    pushMatrix();
+    noFill();
+    stroke(255);
+       
     // fibonacci sphere
     float goldenRatio = ( 1 + sqrt(5) )/2;
     float angleIncrement = TAU * goldenRatio; 
@@ -65,7 +70,10 @@
       float z = cos(angle1); 
       PVector pointOnSphere = new PVector(x,y,z);
     }  
+   popMatrix();
+*/
 
+/*
 
     // u,v sphere
     for (int h=0; h < numHorizontalSegments; h++) {
