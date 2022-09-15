@@ -24,15 +24,11 @@ void draw() {
  rotateZ(-45*PI/180);
  rotateX(-45*PI/180);
  
-  
-  
   // noStroke();
   // lights();
   
   noFill();
   stroke(255);
-  
-  rotateX(PI/180*45);
   
   float r = 200;
   for (int i = 0; i < total+1; i++) {
