@@ -45,6 +45,8 @@ void draw() {
   // noStroke();
   // lights();
   
+  translate(width/2, height/2);
+  
   noFill();
   stroke(255);
        
