@@ -1,10 +1,10 @@
     void setup() {
       size(600,600,P3D);
-      backgrund(0);
+      background(0);
     }
     
     void draw() {
-      transate(200,200, 0);
+      translate(200,200, 0);
       cylinder(100.0, 30.0.,250.0, 6);
     }
     
