@@ -19,7 +19,7 @@ float mchange = 0;
 void setup() {
   size(600, 600, P3D);
   // cam = new PeasyCam(this, 500);
-  // colorMode(HSB);
+  colorMode(HSB);
   globe = new PVector[total+1][total+1];
 }
 
