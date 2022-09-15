@@ -11,20 +11,14 @@
       
       rotateZ(-3*PI/4); // 오른쪽 핸디드가 아니라 모니터방향을 따르다보니 이상해짐. 반대로 됨. 
       rotateX(PI/4);
-      cylinder(20.0, 1.0, 250.0, 6);
+      arrow3D(20.0, 0, 250.0, 6); // 헤드 바텀  직경, 헤드 탑 직경, 몸통은 헤드 바텀 직경의 절반, 몸통 길이, 실린더 다각형 꼭지점수 
       
     }
     
     
-    /**
-    cylinder taken from http://wiki.processing.org/index.php/Cylinder
-    @author matt ditton
-    @modified by Abbas Noureddine, to draw a cone with specified width, dimeter of both
-    top and bottom. (if top == bottom, then you have a cylinder)
-    plus added a translation to draw the cone at the center of the bottom side
-    */
+
      
-    void cylinder(float bottom, float top, float h, int sides)
+    void Arrow3D(float bottom, float top, float h, int sides)
     {
       pushMatrix();
       
