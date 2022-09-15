@@ -44,6 +44,10 @@ void draw() {
   background(0);
   // noStroke();
   // lights();
+  
+  noFill();
+  stroke(255);
+       
   float r = 200;
   for (int i = 0; i < total+1; i++) {
     float lat = map(i, 0, total, -HALF_PI, HALF_PI);
