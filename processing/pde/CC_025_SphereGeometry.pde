@@ -4,16 +4,16 @@
 // https://youtu.be/RkuBWEkBrZA
 // https://editor.p5js.org/codingtrain/sketches/qVs1hxt
 
-import peasy.*;
+// import peasy.*;
 
-PeasyCam cam;
+// PeasyCam cam;
 
 PVector[][] globe;
 int total = 75;
 
 void setup() {
   size(600, 600, P3D);
-  cam = new PeasyCam(this, 500);
+  // cam = new PeasyCam(this, 500);
   colorMode(HSB);
   globe = new PVector[total+1][total+1];
 }
