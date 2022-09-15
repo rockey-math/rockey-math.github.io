@@ -19,13 +19,13 @@
       pushMatrix();
        noStroke();
        fill(255);
-       // lights();
+       lights();
        // translate(130, height/2, 0);
        rotateY(rotation * (PI/180));
        rotateX(rotation * (PI/180));
        rotateZ(rotation * (PI/180));
        arrow3D(20.0, 0, 250.0, 6);
-       rotation = (rotation + 0.1);
+       rotation = (rotation + 0.2);
       popMatrix();  
       
       pushMatrix();
