@@ -27,6 +27,8 @@ void draw() {
   noFill();
   stroke(255);
   
+  rotateX(PI/180*45);
+  
   float r = 200;
   for (int i = 0; i < total+1; i++) {
     float lat = map(i, 0, total, 0, PI);
