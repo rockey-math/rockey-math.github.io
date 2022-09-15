@@ -5,6 +5,8 @@
     
     void draw() {
       translate(width/2, height/2);
+      printlin(mouseX + " " + mouseY);
+      
       //rotateZ(PI/4);
       //rotateX(-PI/4);
       cylinder(30.0, 1.0, 250.0, 6);
