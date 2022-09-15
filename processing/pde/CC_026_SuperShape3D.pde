@@ -37,19 +37,18 @@ float supershape(float theta, float m, float n1, float n2, float n3) {
 }
 
 void draw() {
-  
-  m = map(sin(mchange), -1, 1, 0, 7);
-  mchange += 0.02;
-  
   background(0);
   // noStroke();
   // lights();
   
   translate(width/2, height/2);
-  
+ 
   noFill();
   stroke(255);
        
+  m = map(sin(mchange), -1, 1, 0, 7);
+  mchange += 0.02;
+  
   float r = 200;
   for (int i = 0; i < total+1; i++) {
     float lat = map(i, 0, total, -HALF_PI, HALF_PI);
