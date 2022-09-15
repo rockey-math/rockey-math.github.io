@@ -38,9 +38,10 @@
        stroke(255);
        // translate(50, height*0.35, -200);
        // translate(0, 0, -50);
-       rotateY(rotation2 * (PI/180));
-       rotateX(rotation2 * (PI/180));
-       rotateZ(rotation2 * (PI/180));
+       // rotateY(rotation2 * (PI/180));
+       // rotateX(rotation2 * (PI/180));
+       rotateX(90.0 * (PI/180));
+       // rotateZ(rotation2 * (PI/180));
        sphere(100.0);
        rotation2 = (rotation2 + 0.1);
       popMatrix();
