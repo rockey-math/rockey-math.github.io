@@ -21,6 +21,9 @@ void setup() {
 void draw() {
  background(0);
  translate(width/2, height/2);
+ rotateZ(-45*PI/180);
+ rotateX(-45*PI/180);
+ 
   
   
   // noStroke();
