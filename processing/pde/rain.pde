@@ -2,6 +2,8 @@ Drop[] drops = new Drop[40];
 Cloud[] clouds = new Cloud[100];
 Sun sun = new Sun(50);
 
+// https://github.com/nmillward/processing_sketches
+
 void setup() {
   size(1000, 1000);
   for (int i = 0; i < drops.length; i++) {
