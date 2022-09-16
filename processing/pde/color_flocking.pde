@@ -247,7 +247,7 @@ class Block {
       println("steer.x",steer.x);
       println("steer",steer);
       
-      // println(sum.sub(velocity));
+      println("sum.sub(velocity)");
       
       steer = sum.sub(velocity);
       println("steer",steer);
