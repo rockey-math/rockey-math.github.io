@@ -40,6 +40,8 @@ class Ball {
     this.size = diam;
 
     worldCenter = new PVector(width / 2, height / 2);
+    printlin(worldCenter.x);
+    
     ballPosition = worldCenter.copy();
     printlin(worldCenter.x);
     printlin(ballPosition.x);
