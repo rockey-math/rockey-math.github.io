@@ -252,7 +252,10 @@ class Block {
       // steer = sum.sub(velocity);  // WRONG!!!!!!   not in one statement!   sum.sub(velocity); steer = sum;  OR
       steer = PVector.sub(sum,velocity); // sum - velocity
       
+      
+      println("in align: maxforce", maxforce);
       println("steer",steer);
+      
       steer.limit(maxForce);
       
       println(steer);
