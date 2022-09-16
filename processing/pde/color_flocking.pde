@@ -95,7 +95,7 @@ void keyPressed() {
 class Block {
 
   PVector position, velocity, acceleration, rgb;
-  // PVector steer; // KR
+  PVector steer; // KR
   
   float radius, size, grayscale;
   
