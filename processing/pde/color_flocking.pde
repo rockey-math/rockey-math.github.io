@@ -82,8 +82,8 @@ void keyPressed() {
 
 
 ////////////////
-// float maxSpeed = 2.0;
-// float maxForce = 0.02;
+float maxSpeed = 2.0;
+float maxForce = 0.02;
 
 class Block {
 
@@ -91,8 +91,8 @@ class Block {
   
   float radius, size, grayscale;
   
-  float maxSpeed = 2.0;  //
-  float maxForce = 0.02; //
+  //float maxSpeed = 2.0;  //
+  //float maxForce = 0.02; //
 
   Block(float x, float y, float s) {
     position = new PVector(x, y);
@@ -208,7 +208,7 @@ class Block {
     PVector sum = new PVector(0, 0, 0);
     int count = 0;
     
-    //println("in align");
+    println("in align");
     //println("steer.x",steer.x);
     //println("steer.y",steer.y);
     //println("steer.z",steer.z);
