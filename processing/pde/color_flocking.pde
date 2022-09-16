@@ -11,7 +11,7 @@ Block west, east, north, south;
 Block northwest, northeast, southwest, southeast;
 
 void setup() {
-  size(40, 40); 
+  size(80, 80); 
 
   columns = width / rectSize;
   rows = height / rectSize;
@@ -157,7 +157,7 @@ class Block {
     PVector steer = PVector.sub(desired, velocity); // KR
     // steer = PVector.sub(desired, velocity); // KR
     
-    println("in seek");
+    // println("in seek");
     
     steer.limit(maxForce);
     return steer;
@@ -171,7 +171,7 @@ class Block {
     
     int count = 0;
     
-    println("in separate");
+    // println("in separate");
 
     for (Block neighbor : blocks) {
       if (neighbor != null) {
@@ -267,7 +267,7 @@ class Block {
     PVector sum = new PVector(0, 0, 0);
     int count = 0;
 
-    println("in cohesion");
+    // println("in cohesion");
     
     for (Block neighbor : blocks) {
       if (neighbor != null) {
