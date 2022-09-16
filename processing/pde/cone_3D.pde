@@ -112,9 +112,9 @@ void drawSphere(type, radiusSphere, total)
       float angle1 = acos(1-2*t);
       float angle2 = angleIncrement * i;
       
-      float x = sin(angle1) * cos(angle2);
-      float y = sin(angle1) * sin(angle2);
-      float z = cos(angle1); 
+      float x = r * sin(angle1) * cos(angle2);
+      float y = r * sin(angle1) * sin(angle2);
+      float z = r * cos(angle1); 
       // PVector pointOnSphere = new PVector(x,y,z);
       globe[0][i] = new PVector(x, y, z);
     }  // for
@@ -133,7 +133,7 @@ void drawSphere(type, radiusSphere, total)
     }
     endShape();
   }
- /* 
+ */
 // } else if (type == 2) { // u,v sphere
  
     noFill();
