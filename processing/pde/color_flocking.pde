@@ -165,6 +165,8 @@ class Block {
     PVector steer = PVector.sub(desired, velocity); // KR
     // steer = PVector.sub(desired, velocity); // KR
     
+    println("in seek");
+    
     steer.limit(maxForce);
     return steer;
   }
@@ -176,6 +178,8 @@ class Block {
     // steer = new PVector(0, 0); // KR
     
     int count = 0;
+    
+    println("in separate");
 
     for (Block neighbor : blocks) {
       if (neighbor != null) {
@@ -209,6 +213,8 @@ class Block {
     PVector steer = new PVector();
     PVector sum = new PVector(0, 0, 0);
     int count = 0;
+    
+    println("in align");
 
     for (Block neighbor : blocks) {
       if (neighbor != null) {
@@ -239,6 +245,8 @@ class Block {
     PVector sum = new PVector(0, 0, 0);
     int count = 0;
 
+    println("in cohesion");
+    
     for (Block neighbor : blocks) {
       if (neighbor != null) {
         //float d = PVector.dist(rgb, neighbor.rgb);
