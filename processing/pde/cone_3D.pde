@@ -153,20 +153,19 @@ void drawSphere(type, radiusSphere, total)
         } // for
      } // for   
      
-    for (int i = 0; i < total; i++) {
-    // float hu = map(i, 0, total, 0, 255*6);
-    // fill(hu  % 255, 255, 255);
-    // beginShape(TRIANGLE_STRIP);
-    // beginShape(POINTS);
-    beginShape(LINES);
-    for (int j = 0; j < total+1; j++) {
-      
-      PVector v1 = globe[i][j];
-      vertex(v1.x, v1.y, v1.z);
-      PVector v2 = globe[i+1][j];
-      vertex(v2.x, v2.y, v2.z);
-    }
-    endShape();
+    for (int h=0; h < numHorizontalSegments; h++) {
+     // float hu = map(i, 0, total, 0, 255*6);
+     // fill(hu  % 255, 255, 255);
+     // beginShape(TRIANGLE_STRIP);
+     // beginShape(POINTS);
+     beginShape(LINES);
+     for (int v=0; v <= numVerticalSegments; v++) {
+       PVector v1 = globe[h][v];
+       vertex(v1.x, v1.y, v1.z);
+       PVector v2 = globe[h+1][v];
+       vertex(v2.x, v2.y, v2.z);
+     }
+     endShape();
   }
      
  // } else { // lat, long
