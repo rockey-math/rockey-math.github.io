@@ -17,7 +17,7 @@ float mchange = 0;
 
 
 void setup() {
-  size(600, 600, P3D);
+  size(800, 800, P3D);
   // cam = new PeasyCam(this, 500);
   colorMode(HSB);
   globe = new PVector[total+1][total+1];
@@ -44,7 +44,8 @@ void draw() {
   translate(width/2, height/2);
   rotateZ(-45*PI/180);
   rotateX(-90*PI/180);
- 
+  rotateX(millis() * 0.0001);//animation
+  
   noFill();
   stroke(255);
        
