@@ -77,13 +77,16 @@ void keyPressed() {
 
 
 ////////////////
-float maxSpeed = 2.0;
-float maxForce = 0.02;
+// float maxSpeed = 2.0;
+// float maxForce = 0.02;
 
 class Block {
 
   PVector position, velocity, acceleration, rgb;
   float radius, size, grayscale;
+  
+  float maxSpeed = 2.0;
+  float maxForce = 0.02;
 
   Block(float x, float y, float s) {
     position = new PVector(x, y);
