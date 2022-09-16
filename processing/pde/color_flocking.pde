@@ -18,6 +18,8 @@ void setup() {
 
   blocks = new Block[columns][rows];
   
+  println("columns, rows",columns, rows);
+  
   for (int y = 0; y < rows; y++) {
     for (int x = 0; x < columns; x++) {
       blocks[y][x] = new Block(x * rectSize, y * rectSize, rectSize);
