@@ -11,14 +11,12 @@ Block west, east, north, south;
 Block northwest, northeast, southwest, southeast;
 
 void setup() {
-  size(800, 800); 
+  size(100, 100, P3D); 
 
   columns = width / rectSize;
   rows = height / rectSize;
 
   blocks = new Block[columns][rows];
-
-  println("HELLO");
   
   for (int y = 0; y < rows; y++) {
     for (int x = 0; x < columns; x++) {
@@ -43,11 +41,6 @@ void draw() {
       if ((x < columns - 1) && (y > 0)) northeast = blocks[y - 1][x + 1];
       if ((y < rows - 1) && (x > 0)) southwest = blocks[y + 1][x - 1];
       if ((y < rows - 1) && (x < columns - 1)) southeast = blocks[y + 1][x + 1];
-
-      println(columns);
-      println(rows);
-      
-      println(west);
       
       locBlocks = new ArrayList<Block>();
 
@@ -60,8 +53,6 @@ void draw() {
       locBlocks.add(southwest);
       locBlocks.add(southeast);
       
-      println(west);
-
       blocks[y][x].flock(locBlocks);
 
       blocks[y][x].render();
@@ -95,12 +86,11 @@ void keyPressed() {
 class Block {
 
   PVector position, velocity, acceleration, rgb;
-  // PVector steer; // KR
   
   float radius, size, grayscale;
   
-  float maxSpeed = 2.0;
-  float maxForce = 0.02;
+  float maxSpeed = 2.0;  //
+  float maxForce = 0.02; //
 
   Block(float x, float y, float s) {
     position = new PVector(x, y);
@@ -216,11 +206,11 @@ class Block {
     PVector sum = new PVector(0, 0, 0);
     int count = 0;
     
-    println("in align");
-    println("steer.x",steer.x);
-    println("steer.y",steer.y);
-    println("steer.z",steer.z);
-    println("steer",steer);
+    //println("in align");
+    //println("steer.x",steer.x);
+    //println("steer.y",steer.y);
+    //println("steer.z",steer.z);
+    //println("steer",steer);
 
     for (Block neighbor : blocks) {
       if (neighbor != null) {
@@ -233,9 +223,9 @@ class Block {
       }
     }
     
-    println("in align");
-    println(sum.x);
-    println("count",count);
+    //println("in align");
+    //println(sum.x);
+    //println("count",count);
     
     if (count > 0) {
       sum.div((float)count);
@@ -243,29 +233,29 @@ class Block {
       sum.normalize();
       sum.mult(maxSpeed);
 
-      println("in align", maxSpeed);
-      println("velocity",velocity);
-      println("sum",sum);
-      println("steer.x",steer.x);
-      println("steer",steer);
+      //println("in align", maxSpeed);
+      //println("velocity",velocity);
+      //println("sum",sum);
+      //println("steer.x",steer.x);
+      //println("steer",steer);
       
-      println("sum.sub(velocity)");
+      //println("sum.sub(velocity)");
       
       // steer = sum.sub(velocity);  // WRONG!!!!!!   not in one statement!   sum.sub(velocity); steer = sum;  OR
       steer = PVector.sub(sum,velocity); // sum - velocity
       
       
-      println("in align: maxForce", maxForce);
-      println("steer",steer);
+      //println("in align: maxForce", maxForce);
+      //println("steer",steer);
       
       steer.limit(maxForce);
       
-      println(steer);
-      println("in align", maxForce);
+      //println(steer);
+      //println("in align", maxForce);
     }
  
-    println("in align");
-    println(steer.x);
+    // println("in align");
+    //println(steer.x);
     
     return steer;
   }
