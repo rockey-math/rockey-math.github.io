@@ -90,7 +90,7 @@ void drawSphere(type, radiusSphere, total)
     noFill();
     stroke(255);
     
-    int numPoints = total;
+    int numPoints = 2*total;
     
     float goldenRatio = ( 1 + sqrt(5) )/2;
     float angleIncrement = TAU * goldenRatio; 
