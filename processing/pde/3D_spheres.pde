@@ -45,7 +45,7 @@ void draw() {
   rotateZ(-45*PI/180);
   rotateX(-90*PI/180);
   rotateX(millis() * 0.0001);//animation
-  rotateZ(millis() * 0.001);//animation
+  rotateZ(millis() * 0.0001);//animation
   
   noFill();
   stroke(255);
