@@ -10,7 +10,7 @@
     void setup() {
       size(600,600,P3D);
       // background(0);
-      colorMode(HSB);
+      
       globe = new PVector[total+1][total+1];
     }
     
@@ -63,7 +63,8 @@ void drawSphere(type, radiusSphere, total)
  pushMatrix();
  
  if (type == 1) { // fibonacci sphere
-
+    colorMode(HSB);
+    
     noStroke();
     fill(30., 85., 150., 150.);
     lights();   // 라이츠가 없으면 오패시티가 작동안하는거 같다. 
@@ -94,16 +95,24 @@ void drawSphere(type, radiusSphere, total)
     // float hu = map(i, 0, total, 0, 255*6);
     // fill(hu  % 255, 255, 255);
     // beginShape(TRIANGLE_STRIP);
+/*    float offset = 0;
+    float hu = map(i, 0, total, 0, 255*6);
+    fill((hu + offset) % 255 , 255, 255);
     beginShape(POINTS);
+   */ 
     // beginShape(LINES);
     for (int i = 0; i < numPoints ; i++) {
-      
+    float offset = 0;
+    float hu = map(i, 0, umPoints, 0, 255*6);
+    fill((hu + offset) % 255 , 255, 255);
+    beginShape(POINTS);  
       PVector v1 = globe[0][i];
       vertex(v1.x, v1.y, v1.z);
       PVector v2 = globe[0][i+1];
       vertex(v2.x, v2.y, v2.z);
+      endShape();
     }
-    endShape();
+    //endShape();
   
  
 } else if (type == 2) { // u,v sphere
