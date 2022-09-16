@@ -41,6 +41,8 @@ class Ball {
 
     worldCenter = new PVector(width / 2, height / 2);
     ballPosition = worldCenter.copy();
+    printlin(worldCenter.x);
+    printlin(ballPosition.x);
     direction = new PVector(cos(angle), sin(angle));
     
   }
