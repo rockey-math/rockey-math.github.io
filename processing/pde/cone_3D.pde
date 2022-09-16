@@ -96,7 +96,8 @@ void drawSphere(type, radiusSphere, total)
     float angleIncrement = TAU * goldenRatio; 
     
     for (int i=0; i < numPoints + 1; i++) {
-      float t = (float) i/numPoints;
+      // float t = (float) i/numPoints;
+      float t = i/numPoints;
       float angle1 = acos(1-2*t);
       float angle2 = angleIncrement * i;
       
