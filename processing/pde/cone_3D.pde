@@ -54,7 +54,7 @@
       popMatrix();
     }
   
-     
+//////////////////////////////////////////////////////////////     
 void drawSphere(type, radiusSphere, total) 
 {
  float r = radiusSphere;
@@ -175,7 +175,7 @@ void drawSphere(type, radiusSphere, total)
  popMatrix();
 } // void drawSphere(
      
-     
+  //////////////////////////////////////////////////////////////////////////   
     void arrow3D(float bottom, float top, float h, int sides)
     {
       pushMatrix();
