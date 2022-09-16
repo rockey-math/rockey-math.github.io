@@ -215,7 +215,10 @@ class Block {
     int count = 0;
     
     println("in align");
-    println(steer.x);
+    println("steer.x",steer.x);
+    println("steer.y",steer.y);
+    println("steer.z",steer.z);
+    println("steer",steer);
 
     for (Block neighbor : blocks) {
       if (neighbor != null) {
