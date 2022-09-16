@@ -65,7 +65,7 @@ void drawSphere(type, radiusSphere, total)
 
     noStroke();
     fill(30., 85., 150., 150.);
-    lights();
+    lights();   // 라이츠가 없으면 오패시티가 작동안하는거 같다. 
     sphere(r);
       
     noFill();
