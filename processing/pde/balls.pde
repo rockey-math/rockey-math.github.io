@@ -42,7 +42,7 @@ class Ball {
     worldCenter = new PVector(width / 2, height / 2);
     println(worldCenter.x);
     
-    // ballPosition = worldCenter.copy();
+    // ballPosition = worldCenter.copy();    // 이게 에러 유발 시킴.
     ballPosition = worldCenter;
     
     println(worldCenter.x);
