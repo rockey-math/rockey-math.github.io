@@ -141,9 +141,11 @@ void drawSphere(type, radiusSphere, total)
     
     int numHorizontalSegments = total;
     int numVerticalSegments = total;
-    for (int h=0; h < numHorizontalSegments; h++) {
+    // for (int h=0; h < numHorizontalSegments; h++) {
+    for (int h=0; h < numHorizontalSegments + 1; h++) {
         float angle1 = (h+1) * PI / (numHorizontalSegments + 1); 
-        for (int v=0; v <= numVerticalSegments; v++) {
+        //for (int v=0; v <= numVerticalSegments; v++) {
+        for (int v=0; v < numVerticalSegments + 1; v++) {
             float angle2 = v * TAU / numVerticalSegments; 
             float x = r * sin(angle1) * cos(angle2);
             float z = r * sin(angle1) * sin(angle2);
@@ -159,7 +161,8 @@ void drawSphere(type, radiusSphere, total)
      // beginShape(TRIANGLE_STRIP);
      // beginShape(POINTS);
      beginShape(LINES);
-     for (int v=0; v <= numVerticalSegments; v++) {
+     // for (int v=0; v <= numVerticalSegments; v++) {
+     for (int v=0; v < numVerticalSegments + 1; v++) {
        PVector v1 = globe[h][v];
        vertex(v1.x, v1.y, v1.z);
        PVector v2 = globe[h+1][v];
