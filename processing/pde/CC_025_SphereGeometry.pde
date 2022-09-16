@@ -9,7 +9,7 @@
 // PeasyCam cam;
 
 PVector[][] globe;
-int total = 75;
+int total = 35;
 
 void setup() {
   size(600, 600, P3D);
@@ -47,7 +47,7 @@ void draw() {
     // fill(hu  % 255, 255, 255);
     // beginShape(TRIANGLE_STRIP);
     // beginShape(POINTS);
-    // beginShape(LINES);
+    beginShape(LINES);
     for (int j = 0; j < total+1; j++) {
       
       PVector v1 = globe[i][j];
