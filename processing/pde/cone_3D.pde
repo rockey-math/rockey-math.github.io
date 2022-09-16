@@ -1,6 +1,6 @@
     int rotation1 = 0;
     int rotation2 = 0;
-    int type = 3;
+    int type = 1;
     
     PVector[][] globe;
     int total = 75;
