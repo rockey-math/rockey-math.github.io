@@ -215,6 +215,7 @@ class Block {
     int count = 0;
     
     println("in align");
+    println(steer.x);
 
     for (Block neighbor : blocks) {
       if (neighbor != null) {
@@ -236,6 +237,7 @@ class Block {
       steer = sum.sub(velocity);
       steer.limit(maxForce);
       
+      println(steer.x);
       println("in align", maxforce);
     }
 
