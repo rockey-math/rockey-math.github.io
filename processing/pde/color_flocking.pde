@@ -249,7 +249,11 @@ class Block {
       
       println("sum.sub(velocity)");
       
-      PVector steer = sum.sub(velocity);
+      // steer = sum.sub(velocity);
+      
+      sum.sub(velocity);
+      steer = sum;
+      
       println("steer",steer);
       steer.limit(maxForce);
       
