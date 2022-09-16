@@ -1,6 +1,9 @@
 int rectSize = 8;
 int columns, rows;
 
+float maxSpeed = 2.0; // KR
+float maxForce = 0.02;
+
 Block[][] blocks;
 ArrayList<Block> locBlocks;
 
@@ -52,6 +55,8 @@ void draw() {
       locBlocks.add(northeast);
       locBlocks.add(southwest);
       locBlocks.add(southeast);
+      
+      println(west);
 
       blocks[y][x].flock(locBlocks);
 
@@ -90,8 +95,8 @@ class Block {
   
   float radius, size, grayscale;
   
-  float maxSpeed = 2.0;
-  float maxForce = 0.02;
+  // float maxSpeed = 2.0;
+  // float maxForce = 0.02;
 
   Block(float x, float y, float s) {
     position = new PVector(x, y);
