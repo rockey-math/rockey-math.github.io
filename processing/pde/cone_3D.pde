@@ -94,7 +94,7 @@ void drawSphere(type, radiusSphere, total)
     
     float goldenRatio = ( 1 + sqrt(5) )/2;
     float angleIncrement = TAU * goldenRatio; 
-    
+   
     for (int i=0; i < numPoints + 1; i++) {
       // float t = (float) i/numPoints;
       float t = i/numPoints;
@@ -121,7 +121,7 @@ void drawSphere(type, radiusSphere, total)
       vertex(v2.x, v2.y, v2.z);
     }
     endShape();
-  }
+  
  
 // } else if (type == 2) { // u,v sphere
  /*
@@ -159,7 +159,7 @@ void drawSphere(type, radiusSphere, total)
      }
      endShape();
   }
-   */  
+   */ 
  // } else { // lat, long
  /*
   noFill();
