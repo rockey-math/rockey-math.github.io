@@ -1,6 +1,6 @@
     int rotation1 = 0;
     int rotation2 = 0;
-    int type = 1;
+    int type = 3;
     
     PVector[][] globe;
     int total = 75;
@@ -98,6 +98,7 @@ void drawSphere(type, radiusSphere, total)
  pushMatrix();
  
  if (type == 1) { // fibonacci sphere
+/*
     noFill();
     stroke(255);
     
@@ -132,9 +133,9 @@ void drawSphere(type, radiusSphere, total)
     }
     endShape();
   }
-  
+ /* 
  } else if (type == 2) { // u,v sphere
- 
+ /*
     noFill();
     stroke(255);
     
@@ -167,7 +168,7 @@ void drawSphere(type, radiusSphere, total)
     }
     endShape();
   }
-     
+ */    
  } else { // lat, long
  
   noFill();
