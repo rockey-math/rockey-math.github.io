@@ -93,24 +93,16 @@ void drawSphere(type, radiusSphere, total)
     
     // float hu = map(i, 0, total, 0, 255*6);
     // fill(hu  % 255, 255, 255);
-    // beginShape(TRIANGLE_STRIP);
-    colorMode(HSB);
-    for (int j = 0; j < numPoints ; j++) {
-
-    float offset = 0;
-    float hu = map(j, 0, total, 0, 255*6);
-    fill((hu + offset) % 255 , 255, 255);
+    // beginShape(TRIANGLE_STRIP); 
     beginShape(POINTS);
     
     // beginShape(LINES);
     for (int i = 0; i < numPoints ; i++) {
- 
       PVector v1 = globe[0][i];
       vertex(v1.x, v1.y, v1.z);
       PVector v2 = globe[0][i+1];
       vertex(v2.x, v2.y, v2.z);
       
-    }
     }
     endShape();
   
