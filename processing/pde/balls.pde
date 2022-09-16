@@ -40,11 +40,11 @@ class Ball {
     this.size = diam;
 
     worldCenter = new PVector(width / 2, height / 2);
-    printlin(worldCenter.x);
+    println(worldCenter.x);
     
     ballPosition = worldCenter.copy();
-    printlin(worldCenter.x);
-    printlin(ballPosition.x);
+    println(worldCenter.x);
+    println(ballPosition.x);
     direction = new PVector(cos(angle), sin(angle));
     
   }
