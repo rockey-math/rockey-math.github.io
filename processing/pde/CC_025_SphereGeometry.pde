@@ -9,7 +9,7 @@
 // PeasyCam cam;
 
 PVector[][] globe;
-int total = 35;
+int total = 75;
 
 void setup() {
   size(600, 600, P3D);
@@ -52,8 +52,8 @@ void draw() {
       
       PVector v1 = globe[i][j];
       vertex(v1.x, v1.y, v1.z);
-      PVector v2 = globe[i+1][j];
-      vertex(v2.x, v2.y, v2.z);
+      // PVector v2 = globe[i+1][j];
+      // vertex(v2.x, v2.y, v2.z);
     }
     endShape();
   }
