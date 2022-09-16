@@ -186,9 +186,9 @@ void drawSphere(type, radiusSphere, total)
         float lhead = h/10;
         float lbody = h/10*9;
         
-        translate(0,lbody/2,0);
+        // translate(0,lbody/2,0);
         // translate(0,-lbody,0);
-        
+        translate(0,h/2,0);
       
         float angle;
         float[] x = new float[sides+1];
