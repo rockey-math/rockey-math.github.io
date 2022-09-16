@@ -181,6 +181,9 @@ void drawSphere(type, radiusSphere, total)
   //////////////////////////////////////////////////////////////////////////   
     void arrow3D(float bottom, float top, float h, int sides)
     {
+      PVector head = new PVector(0, h, 0);
+      println(head);
+      
       pushMatrix();
       
         float lhead = h/10;
