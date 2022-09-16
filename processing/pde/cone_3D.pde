@@ -145,9 +145,9 @@ void drawSphere(type, radiusSphere, total)
         float angle1 = (h+1) * PI / (numHorizontalSegments + 1); 
         for (int v=0; v <= numVerticalSegments; v++) {
             float angle2 = v * TAU / numVerticalSegments; 
-            float x = sin(angle1) * cos(angle2);
-            float z = sin(angle1) * sin(angle2);
-            float y = cos(angle1); 
+            float x = r * sin(angle1) * cos(angle2);
+            float z = r * sin(angle1) * sin(angle2);
+            float y = r * cos(angle1); 
             // PVector pointOnSphere = new PVector(x,y,z);
             globe[h][v] = new PVector(x, y, z);
         } // for
