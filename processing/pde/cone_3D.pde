@@ -135,12 +135,12 @@ void drawSphere(type, radiusSphere, total)
   }
  /* 
 // } else if (type == 2) { // u,v sphere
- /*
+ 
     noFill();
     stroke(255);
     
-    numHorizontalSegments = total;
-    numVerticalSegments = total;
+    int numHorizontalSegments = total;
+    int numVerticalSegments = total;
     for (int h=0; h < numHorizontalSegments; h++) {
         float angle1 = (h+1) * PI / (numHorizontalSegments + 1); 
         for (int v=0; v <= numVerticalSegments; v++) {
@@ -168,9 +168,9 @@ void drawSphere(type, radiusSphere, total)
     }
     endShape();
   }
- */    
+     
  // } else { // lat, long
- 
+ /*
   noFill();
   stroke(255);
   for (int i = 0; i < total+1; i++) {
@@ -199,7 +199,7 @@ void drawSphere(type, radiusSphere, total)
     }
     endShape();
   }
-  
+ */ 
 // } // end if 
  popMatrix();
 }
