@@ -92,7 +92,7 @@ void keyPressed() {
 class Block {
 
   PVector position, velocity, acceleration, rgb;
-  PVector steer; // KR
+  // PVector steer; // KR
   
   float radius, size, grayscale;
   
@@ -159,8 +159,8 @@ class Block {
     desired.mult(maxSpeed);
 
     //Steering = Desired - Velocity
-    // PVector steer = PVector.sub(desired, velocity); // KR
-    steer = PVector.sub(desired, velocity); // KR
+    PVector steer = PVector.sub(desired, velocity); // KR
+    // steer = PVector.sub(desired, velocity); // KR
     
     steer.limit(maxForce);
     return steer;
@@ -169,8 +169,8 @@ class Block {
   PVector separate(ArrayList<Block> blocks) {
     //float separationDist = 20.0;
     PVector sum = new PVector(0, 0, 0);
-    // PVector steer = new PVector(0, 0);  // KR
-    steer = new PVector(0, 0); // KR
+    PVector steer = new PVector(0, 0);  // KR
+    // steer = new PVector(0, 0); // KR
     
     int count = 0;
 
