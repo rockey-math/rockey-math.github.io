@@ -1,5 +1,6 @@
     int rotation1 = 0;
     int rotation2 = 0;
+    int type = 1;
     
     PVector[][] globe;
     int total = 75;
@@ -48,7 +49,7 @@
        // rotateX(90.0 * (PI/180));
        // rotateZ(rotation2 * (PI/180));
        // sphere(100.0);
-       drawSphere(radiusSphere, total)
+       drawSphere(type, radiusSphere, total)
        rotation2 = (rotation2 + 0.1);
       popMatrix();
     }
@@ -56,9 +57,7 @@
     
  /*   
  
-    pushMatrix();
-    noFill();
-    stroke(255);
+    pushMatrix()
        
     // fibonacci sphere
     float goldenRatio = ( 1 + sqrt(5) )/2;
@@ -92,22 +91,87 @@
 */
      
      
-void drawSphere(radiusSphere, total) 
+void drawSphere(type, radiusSphere, total) 
 {
+ float r = radiusSphere;
+ 
  pushMatrix();
  
- // background(0);
- // translate(width/2, height/2);
- // rotateZ(-45*PI/180);
- // rotateX(-45*PI/180);
- 
-  // noStroke();
-  // lights();
+ if (type == 1) { // fibonacci sphere
+    noFill();
+    stroke(255);
+    
+    numPoints = total;
+    
+    float goldenRatio = ( 1 + sqrt(5) )/2;
+    float angleIncrement = TAU * goldenRatio; 
+    
+    for (int i=0; i < numPoints; i++) {
+      float t = (float) i/numPoints;
+      float angle1 = acos(1-2*t);
+      float angle2 = angleIncrement * i;
+      
+      float x = sin(angle1) * cos(angle2);
+      float y = sin(angle1) * sin(angle2);
+      float z = cos(angle1); 
+      // PVector pointOnSphere = new PVector(x,y,z);
+      globe[0][i] = new PVector(x, y, z);
+    }  // for
+    
+    // float hu = map(i, 0, total, 0, 255*6);
+    // fill(hu  % 255, 255, 255);
+    // beginShape(TRIANGLE_STRIP);
+    // beginShape(POINTS);
+    beginShape(LINES);
+    for (int i = 0; i < total-1; i++) {
+      
+      PVector v1 = globe[0][i];
+      vertex(v1.x, v1.y, v1.z);
+      PVector v2 = globe[0][i+1];
+      vertex(v2.x, v2.y, v2.z);
+    }
+    endShape();
+  }
   
+ } else if (type == 2) { // u,v sphere
+ 
+    noFill();
+    stroke(255);
+    
+    numHorizontalSegments = total;
+    numVerticalSegments = total;
+    for (int h=0; h < numHorizontalSegments; h++) {
+        float angle1 = (h+1) * PI / (numHorizontalSegments + 1); 
+        for (int v=0; v <= numVerticalSegments; v++) {
+            float angle2 = v * TAU / numVerticalSegments; 
+            float x = sin(angle1) * cos(angle2);
+            float z = sin(angle1) * sin(angle2);
+            float y = cos(angle1); 
+            // PVector pointOnSphere = new PVector(x,y,z);
+            globe[h][v] = new PVector(x, y, z);
+        } // for
+     } // for   
+     
+    for (int i = 0; i < total; i++) {
+    // float hu = map(i, 0, total, 0, 255*6);
+    // fill(hu  % 255, 255, 255);
+    // beginShape(TRIANGLE_STRIP);
+    // beginShape(POINTS);
+    beginShape(LINES);
+    for (int j = 0; j < total+1; j++) {
+      
+      PVector v1 = globe[i][j];
+      vertex(v1.x, v1.y, v1.z);
+      PVector v2 = globe[i+1][j];
+      vertex(v2.x, v2.y, v2.z);
+    }
+    endShape();
+  }
+     
+ } else { // lat, long
+ 
   noFill();
   stroke(255);
-  
-  float r = radiusSphere;
   for (int i = 0; i < total+1; i++) {
     float lat = map(i, 0, total, 0, PI);
     for (int j = 0; j < total+1; j++) {
@@ -135,7 +199,8 @@ void drawSphere(radiusSphere, total)
     endShape();
   }
   
-  popMatrix();
+ } // end if 
+ popMatrix();
 }
      
      
