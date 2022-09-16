@@ -11,7 +11,7 @@ Block west, east, north, south;
 Block northwest, northeast, southwest, southeast;
 
 void setup() {
-  size(100, 100); 
+  size(400, 400); 
 
   columns = width / rectSize;
   rows = height / rectSize;
