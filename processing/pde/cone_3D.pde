@@ -10,6 +10,7 @@
     void setup() {
       size(600,600,P3D);
       // background(0);
+      colorMode(HSB);
       globe = new PVector[total+1][total+1];
     }
     
