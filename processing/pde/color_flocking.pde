@@ -233,7 +233,7 @@ class Block {
       sum.normalize();
       sum.mult(maxSpeed);
 
-      //println("in align", maxSpeed);
+      println("in align", maxSpeed);
       //println("velocity",velocity);
       //println("sum",sum);
       //println("steer.x",steer.x);
