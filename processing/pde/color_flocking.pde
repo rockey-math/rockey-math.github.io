@@ -39,8 +39,8 @@ void draw() {
       if ((y < rows - 1) && (x > 0)) southwest = blocks[y + 1][x - 1];
       if ((y < rows - 1) && (x < columns - 1)) southeast = blocks[y + 1][x + 1];
 
-      printlln(columns);
-      printlln(rows);
+      println(columns);
+      println(rows);
       
       locBlocks = new ArrayList<Block>();
 
