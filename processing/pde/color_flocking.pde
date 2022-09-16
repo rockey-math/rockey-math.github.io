@@ -227,7 +227,11 @@ class Block {
         //}
       }
     }
-
+    
+    println("in align");
+    println(sum.x);
+    println(count);
+    
     if (count > 0) {
       sum.div((float)count);
       // Steering = Desired - Velocity
@@ -240,7 +244,10 @@ class Block {
       println(steer.x);
       println("in align", maxforce);
     }
-
+ 
+    println("in align");
+    println(steer.x);
+    
     return steer;
   }
 
