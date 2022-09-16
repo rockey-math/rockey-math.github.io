@@ -238,6 +238,9 @@ class Block {
       sum.normalize();
       sum.mult(maxSpeed);
 
+      println("in align", maxSpeed);
+      rintln(velocity);
+      
       steer = sum.sub(velocity);
       steer.limit(maxForce);
       
