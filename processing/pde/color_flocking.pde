@@ -210,7 +210,7 @@ class Block {
 
   PVector align(ArrayList<Block> blocks) {
     //float neighborDist = 25.0;
-    PVector steer = new PVector(0,0); // KR 
+    PVector steer = new PVector(0,0,0); // KR 
     PVector sum = new PVector(0, 0, 0);
     int count = 0;
     
@@ -235,6 +235,8 @@ class Block {
 
       steer = sum.sub(velocity);
       steer.limit(maxForce);
+      
+      println("in align", maxforce);
     }
 
     return steer;
