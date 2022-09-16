@@ -233,7 +233,7 @@ class Block {
     
     println("in align");
     println(sum.x);
-    println(count);
+    println("count",count);
     
     if (count > 0) {
       sum.div((float)count);
@@ -244,6 +244,7 @@ class Block {
       println("in align", maxSpeed);
       println("velocity",velocity);
       println("sum",sum);
+      println("steer.x",steer.x);
       println("steer",steer);
       
       // println(sum.sub(velocity));
