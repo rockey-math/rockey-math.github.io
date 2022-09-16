@@ -240,6 +240,7 @@ class Block {
 
       println("in align", maxSpeed);
       println(velocity);
+      println(sum.sub(velocity));
       
       steer = sum.sub(velocity);
       steer.limit(maxForce);
