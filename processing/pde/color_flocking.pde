@@ -44,7 +44,8 @@ void draw() {
 
       println(columns);
       println(rows);
-      println(columns);
+      
+      println(west);
       
       locBlocks = new ArrayList<Block>();
 
