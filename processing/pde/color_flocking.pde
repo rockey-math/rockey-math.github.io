@@ -1,8 +1,8 @@
 int rectSize = 8;
 int columns, rows;
 
-float maxSpeed = 2.0; // KR
-float maxForce = 0.02;
+// float maxSpeed = 2.0; // KR
+// float maxForce = 0.02;
 
 Block[][] blocks;
 ArrayList<Block> locBlocks;
@@ -89,8 +89,8 @@ void keyPressed() {
 
 
 ////////////////
-float maxSpeed = 2.0;
-float maxForce = 0.02;
+// float maxSpeed = 2.0;
+// float maxForce = 0.02;
 
 class Block {
 
@@ -99,8 +99,8 @@ class Block {
   
   float radius, size, grayscale;
   
-  // float maxSpeed = 2.0;
-  // float maxForce = 0.02;
+  float maxSpeed = 2.0;
+  float maxForce = 0.02;
 
   Block(float x, float y, float s) {
     position = new PVector(x, y);
@@ -200,7 +200,9 @@ class Block {
       sum.normalize();
       sum.mult(maxSpeed);
 
-      steer = sum.sub(velocity);
+      // steer = sum.sub(velocity); // WRONG!!!
+      steer = PVector.sub(sum,velocity);  // KR
+      
       steer.limit(maxForce);
     }
 
