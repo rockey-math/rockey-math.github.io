@@ -97,7 +97,7 @@ void drawSphere(type, radiusSphere, total)
  
  pushMatrix();
  
- if (type == 1) { // fibonacci sphere
+// if (type == 1) { // fibonacci sphere
 /*
     noFill();
     stroke(255);
@@ -134,7 +134,7 @@ void drawSphere(type, radiusSphere, total)
     endShape();
   }
  /* 
- } else if (type == 2) { // u,v sphere
+// } else if (type == 2) { // u,v sphere
  /*
     noFill();
     stroke(255);
@@ -169,7 +169,7 @@ void drawSphere(type, radiusSphere, total)
     endShape();
   }
  */    
- } else { // lat, long
+ // } else { // lat, long
  
   noFill();
   stroke(255);
@@ -200,7 +200,7 @@ void drawSphere(type, radiusSphere, total)
     endShape();
   }
   
- } // end if 
+// } // end if 
  popMatrix();
 }
      
