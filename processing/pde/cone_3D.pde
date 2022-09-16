@@ -64,12 +64,12 @@ void drawSphere(type, radiusSphere, total)
  if (type == 1) { // fibonacci sphere
 
     noStroke();
-    fill(30, 55, 70, 230);
+    fill(30, 55, 70, 100);
     sphere(r);
       
     noFill();
     stroke(255);
-    strokeWeight(10);
+    strokeWeight(5);
     
     int numPoints = 2*total;
     
