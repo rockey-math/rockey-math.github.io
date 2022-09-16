@@ -11,7 +11,7 @@ Block west, east, north, south;
 Block northwest, northeast, southwest, southeast;
 
 void setup() {
-  size(100, 100, P3D); 
+  size(100, 100); 
 
   columns = width / rectSize;
   rows = height / rectSize;
