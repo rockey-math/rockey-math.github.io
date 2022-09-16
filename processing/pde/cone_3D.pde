@@ -1,10 +1,15 @@
     int rotation1 = 0;
     int rotation2 = 0;
     
-    
+    PVector[][] globe;
+    int total = 75;
+    float radiusSphere = 200.0;
+    float lengthArrow = 200.0;
+
     void setup() {
       size(600,600,P3D);
       // background(0);
+      globe = new PVector[total+1][total+1];
     }
     
     void draw() {
@@ -26,7 +31,7 @@
        rotateY(rotation1 * (PI/180));
        // rotateX(rotation1 * (PI/180));
        rotateZ(rotation1 * (PI/180));
-       arrow3D(10.0, 0, 100.0, 6);
+       arrow3D(10.0, 0, lengthArrow, 6);
        rotation1 = (rotation1 + 1);
       popMatrix();  
       
@@ -38,15 +43,14 @@
        stroke(255);
        // translate(50, height*0.35, -200);
        // translate(0, 0, -50);
-       // rotateY(rotation2 * (PI/180));
-       // rotateX(rotation2 * (PI/180));
-       rotateX(90.0 * (PI/180));
+       rotateY(rotation2 * (PI/180));
+       rotateX(rotation2 * (PI/180));
+       // rotateX(90.0 * (PI/180));
        // rotateZ(rotation2 * (PI/180));
-       sphere(100.0);
-       // rotation2 = (rotation2 + 0.1);
+       // sphere(100.0);
+       drawSphere(radiusSphere, total)
+       rotation2 = (rotation2 + 0.1);
       popMatrix();
-  
-      
     }
     
     
@@ -86,6 +90,54 @@
             PVector pointOnSphere = new PVector(x,y,z);
         }  
 */
+     
+     
+void drawSphere(radiusSphere, total) 
+{
+ pushMatrix();
+ 
+ // background(0);
+ // translate(width/2, height/2);
+ // rotateZ(-45*PI/180);
+ // rotateX(-45*PI/180);
+ 
+  // noStroke();
+  // lights();
+  
+  noFill();
+  stroke(255);
+  
+  float r = radiusSphere;
+  for (int i = 0; i < total+1; i++) {
+    float lat = map(i, 0, total, 0, PI);
+    for (int j = 0; j < total+1; j++) {
+      float lon = map(j, 0, total, 0, TWO_PI);
+      float x = r * sin(lat) * cos(lon);
+      float y = r * sin(lat) * sin(lon);
+      float z = r * cos(lat);
+      globe[i][j] = new PVector(x, y, z);
+    }
+  }
+
+  for (int i = 0; i < total; i++) {
+    // float hu = map(i, 0, total, 0, 255*6);
+    // fill(hu  % 255, 255, 255);
+    // beginShape(TRIANGLE_STRIP);
+    // beginShape(POINTS);
+    beginShape(LINES);
+    for (int j = 0; j < total+1; j++) {
+      
+      PVector v1 = globe[i][j];
+      vertex(v1.x, v1.y, v1.z);
+      PVector v2 = globe[i+1][j];
+      vertex(v2.x, v2.y, v2.z);
+    }
+    endShape();
+  }
+  
+  popMatrix();
+}
+     
      
     void arrow3D(float bottom, float top, float h, int sides)
     {
