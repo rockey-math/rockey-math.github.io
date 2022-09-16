@@ -64,7 +64,7 @@ void drawSphere(type, radiusSphere, total)
  if (type == 1) { // fibonacci sphere
 
     noStroke();
-    fill(30., 55., 70., 220.);
+    fill(30., 85., 150., 150.);
     lights();
     sphere(r);
       
