@@ -1,8 +1,8 @@
 int rectSize = 8;
 int columns, rows;
 
-// float maxSpeed = 2.0; // KR
-// float maxForce = 0.02;
+float maxSpeed = 2.0; // KR
+float maxForce = 0.02;
 
 Block[][] blocks;
 ArrayList<Block> locBlocks;
@@ -95,7 +95,7 @@ void keyPressed() {
 class Block {
 
   PVector position, velocity, acceleration, rgb;
-  PVector steer; // KR
+  // PVector steer; // KR
   
   float radius, size, grayscale;
   
@@ -249,10 +249,8 @@ class Block {
       
       println("sum.sub(velocity)");
       
-      // steer = sum.sub(velocity);
-      
-      sum.sub(velocity);
-      steer = sum;
+      // steer = sum.sub(velocity);  // WRONG!!!!!!   not in one statement!   sum.sub(velocity); steer = sum;  OR
+      steer = PVector.sub(sum,velocity); // sum - velocity
       
       println("steer",steer);
       steer.limit(maxForce);
