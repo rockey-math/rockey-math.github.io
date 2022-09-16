@@ -253,13 +253,13 @@ class Block {
       steer = PVector.sub(sum,velocity); // sum - velocity
       
       
-      println("in align: maxforce", maxforce);
+      println("in align: maxForce", maxForce);
       println("steer",steer);
       
       steer.limit(maxForce);
       
       println(steer);
-      println("in align", maxforce);
+      println("in align", maxForce);
     }
  
     println("in align");
