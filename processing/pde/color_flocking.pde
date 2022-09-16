@@ -174,7 +174,7 @@ class Block {
   PVector separate(ArrayList<Block> blocks) {
     //float separationDist = 20.0;
     PVector sum = new PVector(0, 0, 0);
-    PVector steer = new PVector(0, 0);  // KR
+    PVector steer = new PVector(0, 0, 0);  // KR
     // steer = new PVector(0, 0); // KR
     
     int count = 0;
@@ -210,7 +210,7 @@ class Block {
 
   PVector align(ArrayList<Block> blocks) {
     //float neighborDist = 25.0;
-    PVector steer = new PVector(0,0,0); // KR 
+    PVector steer = new PVector(0.0, 0.0 ,0.0); // KR 
     PVector sum = new PVector(0, 0, 0);
     int count = 0;
     
