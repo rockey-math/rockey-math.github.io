@@ -36,9 +36,10 @@ void setup() {
   }
   
   /*
+  // https://stackoverflow.com/questions/32066923/why-doesnt-this-processing-processing-js-sketch-show-when-i-run-it
   float shapeSize = 3;
   
-  boidShape = createShape();
+  boidShape = createShape();      // Uncaught ReferenceError: createShape is not defined. in processingJS
   boidShape.beginShape();
   boidShape.strokeWeight(1.5);
   boidShape.noFill();
@@ -50,6 +51,7 @@ void setup() {
   boidShape.endShape(CLOSE);
   */
   
+  /*
   boidShape = createShape();
   boidShape.beginShape();
   boidShape.fill(0, 0, 255);
@@ -59,6 +61,7 @@ void setup() {
   boidShape.vertex(50, 50);
   boidShape.vertex(50, 0);
   boidShape.endShape(CLOSE);
+  */
 
 }
 
