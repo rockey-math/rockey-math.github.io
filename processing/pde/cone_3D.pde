@@ -56,7 +56,8 @@
        endShape();
        
        translate(v.x,v.y,v.z);
-       sphere(20.0);
+       // sphere(20.0);
+       drawSphere(3, 30, total)
        println(v);
        rotation3 = (rotation3 + 1);
       popMatrix();
