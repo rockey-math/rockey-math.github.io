@@ -38,6 +38,23 @@
        // rotation1 = (rotation1 + 0.5);
       popMatrix();  
       
+      pushMatrix();
+       // noStroke();
+       // fill(205, 230, 255, 200);
+       // lights();
+       noFill();
+       stroke(255);
+       // translate(50, height*0.35, -200);
+       // translate(0, 0, -50);
+       rotateY(rotation2 * (PI/180));
+       rotateX(rotation2 * (PI/180));
+       // rotateX(90.0 * (PI/180));
+       // rotateZ(rotation2 * (PI/180));
+       // sphere(100.0);
+       drawSphere(type, radiusSphere, total)
+       // rotation2 = (rotation2 + 0.1);
+      popMatrix();
+      
       
       pushMatrix();
        noStroke();
@@ -60,24 +77,6 @@
        drawSphere(3, 60, total)
        println(v);
        // rotation3 = (rotation3 + 0.5);
-      popMatrix();
-     
-      
-      pushMatrix();
-       // noStroke();
-       // fill(205, 230, 255, 200);
-       // lights();
-       noFill();
-       stroke(255);
-       // translate(50, height*0.35, -200);
-       // translate(0, 0, -50);
-       rotateY(rotation2 * (PI/180));
-       rotateX(rotation2 * (PI/180));
-       // rotateX(90.0 * (PI/180));
-       // rotateZ(rotation2 * (PI/180));
-       // sphere(100.0);
-       drawSphere(type, radiusSphere, total)
-       // rotation2 = (rotation2 + 0.1);
       popMatrix();
       
       rotation1 = (rotation1 + 0.5);
