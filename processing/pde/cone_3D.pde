@@ -49,10 +49,10 @@
        rotateZ(rotation1 * (PI/180));
        
        beginShape(POINTS);
-       // v = new PVector(0, 200.0, 0);
-       // println(v);  // Prints "[ 10.0, 20.0, 0.0 ]"
-       // v.rotate(HALF_PI);
-       vertex(v.x,v.y,v.z);
+         // v = new PVector(0, 200.0, 0);
+         // println(v);  // Prints "[ 10.0, 20.0, 0.0 ]"
+         // v.rotate(HALF_PI);
+         vertex(v.x,v.y,v.z);
        endShape();
        
        translate(v.x,v.y,v.z);
