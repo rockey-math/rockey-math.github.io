@@ -36,10 +36,13 @@ void setup() {
   }
   
   /*
+  
+  // Uncaught ReferenceError: createShape is not defined. in processingJS
   // https://stackoverflow.com/questions/32066923/why-doesnt-this-processing-processing-js-sketch-show-when-i-run-it
+  // 이게 안되니 쉐이프를 직접 그려주어야 하는듯하다. // KR 참조. 95라인부터.
   float shapeSize = 3;
   
-  boidShape = createShape();      // Uncaught ReferenceError: createShape is not defined. in processingJS
+  boidShape = createShape();      
   boidShape.beginShape();
   boidShape.strokeWeight(1.5);
   boidShape.noFill();
@@ -89,14 +92,15 @@ class Boid {
     pushMatrix();
     translate(x, y);
     rotate(heading);
-    // shape(boidShape);   // KR
+    // shape(boidShape);   // KR   이 아래 부분에 직접 그림을 그려주어야 한다. 
       beginShape();
-      fill(0, 0, 255);
-      noStroke();
-      vertex(0, 0);
-      vertex(0, 50);
-      vertex(50, 50);
-      vertex(50, 0);
+       strokeWeight(1.5);
+       noFill();
+       stroke(255);
+       vertex(shapeSize * 4, 0);
+       vertex(-shapeSize, shapeSize * 2);
+       vertex(0, 0);
+       vertex(-shapeSize, -shapeSize * 2);
       endShape(CLOSE);
     popMatrix();
   }
