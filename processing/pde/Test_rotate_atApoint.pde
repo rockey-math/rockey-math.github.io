@@ -1,7 +1,7 @@
 // https://stackoverflow.com/questions/51620952/how-to-rotate-a-3d-object-around-another-point-in-processing
 
 float myAngle=-90; // degree measurement
-float angle2=-90; // degree measurement
+float angle2=-45; // degree measurement
 
 void setup () {
   // Init
