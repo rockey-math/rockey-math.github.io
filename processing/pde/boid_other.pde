@@ -16,7 +16,7 @@ PShape boidShape;
 
 
 void setup() {
-  size(700, 720);
+  size(700, 720, P2D);
   // fullScreen();
   frameRate(60);
   
