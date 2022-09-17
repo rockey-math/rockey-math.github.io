@@ -44,7 +44,7 @@ void draw () {
   // Box: A box with equal dimension on all sides is a cube.
   // blue: around the green box
   translate(258, 0, 0);
-  rotateZ(radians(angle2));
+  // rotateZ(radians(angle2));
   
   pushMatrix();
   rotateY(radians(myAngle));
