@@ -1,5 +1,6 @@
 
 // https://forum.processing.org/one/topic/update-screen-from-recursive-function.html
+// https://cs.brynmawr.edu/Courses/cs110/spring2012/section01/slides/29-6.pdf
 //  Uncaught SyntaxError: missing ] in index expression. 찾을수 없다.
 
 
