@@ -35,7 +35,7 @@
        // rotateX(rotation1 * (PI/180));
        rotateZ(rotation1 * (PI/180));
        arrow3D(10.0, 0, lengthArrow, 6);
-       rotation1 = (rotation1 + 0.5);
+       // rotation1 = (rotation1 + 0.5);
       popMatrix();  
       
       
@@ -59,7 +59,7 @@
        // sphere(20.0);
        drawSphere(3, 60, total)
        println(v);
-       rotation3 = (rotation3 + 0.5);
+       // rotation3 = (rotation3 + 0.5);
       popMatrix();
      
       
@@ -77,8 +77,12 @@
        // rotateZ(rotation2 * (PI/180));
        // sphere(100.0);
        drawSphere(type, radiusSphere, total)
-       rotation2 = (rotation2 + 0.1);
+       // rotation2 = (rotation2 + 0.1);
       popMatrix();
+      
+      rotation1 = (rotation1 + 0.5);
+      rotation2 = (rotation2 + 0.1);
+      rotation3 = (rotation3 + 0.5);
     }
   
 //////////////////////////////////////////////////////////////     
