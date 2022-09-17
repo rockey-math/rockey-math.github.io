@@ -1,5 +1,6 @@
     int rotation1 = 0;
     int rotation2 = 0;
+    int rotation3 = 0;
     int type = 1;
     
     PVector[][] globe;
@@ -53,7 +54,7 @@
        endShape();
        println(v);
        
-       rotation1 = (rotation1 + 1);
+       rotation3 = (rotation3 + 1);
       popMatrix();
      
       
