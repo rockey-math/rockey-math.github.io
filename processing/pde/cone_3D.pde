@@ -7,6 +7,7 @@
     int total = 75;
     float radiusSphere = 200.0;
     float r2 = 100.0;
+    float r3 = 40.0;
     float lengthArrow = 200.0;
 
     void setup() {
@@ -71,11 +72,13 @@
        endShape();
        
        translate(v1.x,v1.y,v1.z);
-       drawSphere(3, r2, total)
+       drawSphere(3, r2, total);
+       arrow3D(10.0, 0, r2, 6);
+       
        println(v1);
       popMatrix();
       
-      // v2 = v1 = new PVector(0, radiusSphere + , 0);
+      // v2 = new PVector(0, radiusSphere + r2 , 0);
       
       rotation1 = (rotation1 + 0.5);
       rotation2 = (rotation2 + 0.1);
