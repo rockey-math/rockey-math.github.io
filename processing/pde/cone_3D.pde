@@ -73,11 +73,11 @@
        endShape();
        
        translate(v1.x,v1.y,v1.z);
-          pushMatrix();
-              rotateY(rotation4 * (PI/180));
+          //pushMatrix();  // 이런 식으로 작동 안하는듯. 아래 로테이션이 무시되어버린듯.
+              //rotateY(rotation4 * (PI/180));
               drawSphere(3, r2, total);
               arrow3D(5.0, 0, r2, 6); // arrow3D(5.0, 0, r2, 6, n.x, n.y, n.z, theta, speed);  로테이션/로테이션속도도 서브루틴안에 들어가야 하나?
-          popMatrix();
+          //popMatrix();
        //println(v1.x, v1.y, v1.z);
       popMatrix();
       
