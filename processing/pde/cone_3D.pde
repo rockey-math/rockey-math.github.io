@@ -49,6 +49,8 @@
        // println(v);  // Prints "[ 10.0, 20.0, 0.0 ]"
        // v.rotate(HALF_PI);
        vertex(v.x,v.y,v.z);
+       println(v);
+       
        rotation1 = (rotation1 + 1);
       popMatrix();
      
