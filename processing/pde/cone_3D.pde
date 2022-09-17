@@ -1,6 +1,7 @@
     int rotation1 = 0;
     int rotation2 = 0;
     int rotation3 = 0;
+    int rotation4 = 0;
     int type = 1;
     
     PVector[][] globe;
@@ -78,11 +79,32 @@
        // println(v1);
       popMatrix();
       
-      // v2 = new PVector(0, radiusSphere + r2 , 0);
+      v2 = new PVector(0, radiusSphere + r2 , 0);
+      
+      pushMatrix();
+       // noStroke();
+       // fill(255,255,255);
+       strokeWeight(10);
+       
+       translate(v2.x,v2.y,v2.z);
+       rotateY(rotation4 * (PI/180));
+       rotateZ(rotation4 * (PI/180));
+       
+       beginShape(POINTS);
+         vertex(v2.x,v2.y,v2.z);
+       endShape();
+       
+       // translate(v2.x,v2.y,v2.z);
+       drawSphere(3, r3, total);
+       arrow3D(5.0, 0, r3, 6); // arrow3D(5.0, 0, r2, 6, n.x, n.y, n.z, theta, speed);  로테이션/로테이션속도도 서브루틴안에 들어가야 하나?
+       
+       // println(v1);
+      popMatrix();
       
       rotation1 = (rotation1 + 0.5);
       rotation2 = (rotation2 + 0.1);
       rotation3 = (rotation3 + 0.5);
+      rotation4 = (rotation4 + 0.3);
     }
   
 //////////////////////////////////////////////////////////////     
