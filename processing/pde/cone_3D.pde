@@ -256,7 +256,7 @@ void drawSphere(type, radiusSphere, total)
         // translate(0,lbody/2,0);
         // translate(0,-lbody,0);
         translate(0,h/2,0);
-        rotateX(millis() * 0.0001);//animation
+        // rotateX(millis() * 0.0001);//animation
       
         float angle;
         float[] x = new float[sides+1];
