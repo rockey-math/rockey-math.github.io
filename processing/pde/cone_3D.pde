@@ -74,7 +74,7 @@
        
        translate(v1.x,v1.y,v1.z);
           pushMatrix();
-              rotateY(rotation3 * (PI/180));
+              rotateY(rotation4 * (PI/180));
               drawSphere(3, r2, total);
               arrow3D(5.0, 0, r2, 6); // arrow3D(5.0, 0, r2, 6, n.x, n.y, n.z, theta, speed);  로테이션/로테이션속도도 서브루틴안에 들어가야 하나?
           popMatrix();
@@ -114,7 +114,7 @@
       rotation1 = (rotation1 + 0.5);
       rotation2 = (rotation2 + 0.1);
       rotation3 = (rotation3 + 0.5);
-      rotation4 = (rotation4 + 0.5);
+      rotation4 = (rotation4 + 0.7);
     }
   
 //////////////////////////////////////////////////////////////     
