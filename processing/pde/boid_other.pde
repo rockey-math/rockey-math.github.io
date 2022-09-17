@@ -89,6 +89,7 @@ class Boid {
   }
   
   void drawBoid(float x, float y, float heading) {
+    float shapeSize = 3;  // KR
     pushMatrix();
     translate(x, y);
     rotate(heading);
