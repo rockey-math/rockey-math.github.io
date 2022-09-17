@@ -45,10 +45,12 @@
        
        rotateY(rotation1 * (PI/180));
        rotateZ(rotation1 * (PI/180));
+       beginShape(POINTS);
        v = new PVector(0, 200.0, 0);
        // println(v);  // Prints "[ 10.0, 20.0, 0.0 ]"
        // v.rotate(HALF_PI);
        vertex(v.x,v.y,v.z);
+       endShape();
        println(v);
        
        rotation1 = (rotation1 + 1);
@@ -200,7 +202,7 @@ void drawSphere(type, radiusSphere, total)
     void arrow3D(float bottom, float top, float h, int sides)
     {
       PVector head = new PVector(0, h, 0);
-      println(head);
+      // println(head);
       
       pushMatrix();
       
