@@ -40,6 +40,8 @@ void recursiveCombinations(String input, int depth, String output) {
     delay(2000);
   }
   else {
+    println("depth = ", depth);
+
     for (int i=0; i<input.length(); i++) {
       output += input.charAt(i);
       recursiveCombinations(input, depth-1, output);
