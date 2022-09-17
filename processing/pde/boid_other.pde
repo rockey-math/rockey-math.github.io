@@ -1,4 +1,5 @@
 // https://github.com/womogenes/Boids/blob/main/Boid.pde
+// https://www.youtube.com/watch?v=x-GwBH4dhko
 
 int n; // How many boids we have.
 float sCoef;
