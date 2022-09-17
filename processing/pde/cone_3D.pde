@@ -43,11 +43,12 @@
        noStroke();
        fill(255,255,255);
        strokeWeight(10);
+       v = new PVector(0, 200.0, 0);
        
        rotateY(rotation1 * (PI/180));
        rotateZ(rotation1 * (PI/180));
        beginShape(POINTS);
-       v = new PVector(0, 200.0, 0);
+       // v = new PVector(0, 200.0, 0);
        // println(v);  // Prints "[ 10.0, 20.0, 0.0 ]"
        // v.rotate(HALF_PI);
        vertex(v.x,v.y,v.z);
