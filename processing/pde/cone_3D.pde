@@ -59,7 +59,7 @@
        // sphere(20.0);
        drawSphere(3, 30, total)
        println(v);
-       rotation3 = (rotation3 + 1);
+       rotation3 = (rotation3 + 0.01);
       popMatrix();
      
       
