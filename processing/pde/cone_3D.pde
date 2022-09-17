@@ -79,12 +79,17 @@
        // println(v1);
       popMatrix();
       
-      v2 = new PVector(0, radiusSphere + r2 , 0);
+      // v2 = new PVector(0, radiusSphere + r2 , 0);
+      v2 = new PVector(0, r2 , 0);
       
       pushMatrix();
        // noStroke();
        // fill(255,255,255);
        strokeWeight(10);
+       
+       translate(v1.x,v1.y,v1.z);
+       rotateY(rotation3 * (PI/180));
+       rotateZ(rotation3 * (PI/180));
        
        translate(v2.x,v2.y,v2.z);
        rotateY(rotation4 * (PI/180));
@@ -104,7 +109,7 @@
       rotation1 = (rotation1 + 0.5);
       rotation2 = (rotation2 + 0.1);
       rotation3 = (rotation3 + 0.5);
-      rotation4 = (rotation4 + 0.3);
+      rotation4 = (rotation4 + 0.5);
     }
   
 //////////////////////////////////////////////////////////////     
