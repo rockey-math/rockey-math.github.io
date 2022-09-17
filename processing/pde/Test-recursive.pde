@@ -1,5 +1,6 @@
 String input = "0123";
 // https://forum.processing.org/one/topic/update-screen-from-recursive-function.html
+//  Uncaught SyntaxError: missing ] in index expression. 찾을수 없다.
 
 void setup() { 
   size(300, 300); 
