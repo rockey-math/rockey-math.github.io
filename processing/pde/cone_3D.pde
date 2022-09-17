@@ -110,7 +110,7 @@
       
       rotation1 = (rotation1 + 0.5);
       rotation2 = (rotation2 + 0.1);
-      rotation3 = (rotation3 + 0.2);
+      rotation3 = (rotation3 + 0.5);
       rotation4 = (rotation4 + 0.5);
     }
   
