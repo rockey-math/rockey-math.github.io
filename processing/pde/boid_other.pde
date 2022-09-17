@@ -15,8 +15,8 @@ Boid[] boids;
 PShape boidShape;
 
 void setup() {
-  // size(1280, 720);
-  fullScreen();
+  size(1280, 720);
+  // fullScreen();
   frameRate(60);
   
   n = 200;
