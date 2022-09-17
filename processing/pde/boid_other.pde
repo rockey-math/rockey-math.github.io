@@ -16,7 +16,7 @@ PShape boidShape;
 
 
 void setup() {
-  size(700, 720, P2D);
+  size(900, 720, P2D);
   // fullScreen();
   frameRate(60);
   
@@ -89,7 +89,7 @@ class Boid {
   }
   
   void drawBoid(float x, float y, float heading) {
-    float shapeSize = 3;  // KR
+    float shapeSize = 2;  // KR
     pushMatrix();
     translate(x, y);
     rotate(heading);
