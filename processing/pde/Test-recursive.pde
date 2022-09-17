@@ -6,7 +6,8 @@ void setup() {
   noLoop();
  
   class RecTest extends Thread {
-    public void run() {
+    // public void run() {
+    void run() {
       reco(this, input, input.length(), "");
     }
   } 
