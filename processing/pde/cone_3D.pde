@@ -178,6 +178,8 @@ void drawSphere(type, radiusSphere, total)
  
   noFill();
   stroke(255);
+  lights();
+  
   for (int i = 0; i < total+1; i++) {
     float lat = map(i, 0, total, 0, PI);
     for (int j = 0; j < total+1; j++) {
