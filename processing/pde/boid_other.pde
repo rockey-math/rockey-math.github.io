@@ -13,9 +13,10 @@ float maxForce;
 Boid[] boids;
 
 PShape boidShape;
+float shapeSize = 10.0;
 
 void setup() {
-  size(1280, 720);
+  size(700, 720);
   // fullScreen();
   frameRate(60);
   
