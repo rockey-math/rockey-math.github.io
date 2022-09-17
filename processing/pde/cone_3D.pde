@@ -47,14 +47,17 @@
        
        rotateY(rotation1 * (PI/180));
        rotateZ(rotation1 * (PI/180));
+       
        beginShape(POINTS);
        // v = new PVector(0, 200.0, 0);
        // println(v);  // Prints "[ 10.0, 20.0, 0.0 ]"
        // v.rotate(HALF_PI);
        vertex(v.x,v.y,v.z);
        endShape();
-       println(v);
        
+       translate(v);
+       sphere(20);
+       println(v);
        rotation3 = (rotation3 + 1);
       popMatrix();
      
