@@ -35,7 +35,7 @@
        // rotateX(rotation1 * (PI/180));
        rotateZ(rotation1 * (PI/180));
        arrow3D(10.0, 0, lengthArrow, 6);
-       rotation1 = (rotation1 + 1);
+       rotation1 = (rotation1 + 0.01);
       popMatrix();  
       
       
