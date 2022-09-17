@@ -76,9 +76,10 @@
        drawSphere(3, r2, total);
        arrow3D(5.0, 0, r2, 6); // arrow3D(5.0, 0, r2, 6, n.x, n.y, n.z, theta, speed);  로테이션/로테이션속도도 서브루틴안에 들어가야 하나?
        
-       // println(v1);
+       println(v1.x, v1.y, v1.z);
       popMatrix();
       
+      /*
       // v2 = new PVector(0, radiusSphere + r2 , 0);
       v2 = new PVector(0, r2 , 0);
       
@@ -105,6 +106,7 @@
        
        // println(v1);
       popMatrix();
+      */
       
       rotation1 = (rotation1 + 0.5);
       rotation2 = (rotation2 + 0.1);
