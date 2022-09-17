@@ -36,7 +36,7 @@ void setup() {
   
   float shapeSize = 3;
   
-  // boidShape = createShape();
+  boidShape = createShape();
   boidShape.beginShape();
   boidShape.strokeWeight(1.5);
   boidShape.noFill();
