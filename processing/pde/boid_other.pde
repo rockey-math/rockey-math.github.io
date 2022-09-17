@@ -51,7 +51,7 @@ void setup() {
   boidShape.endShape(CLOSE);
   */
   
- 
+ /*
   boidShape.beginShape();
   boidShape.fill(0, 0, 255);
   boidShape.noStroke();
@@ -60,7 +60,7 @@ void setup() {
   boidShape.vertex(50, 50);
   boidShape.vertex(50, 0);
   boidShape.endShape(CLOSE);
-
+*/
 }
 
 
@@ -89,7 +89,15 @@ class Boid {
     pushMatrix();
     translate(x, y);
     rotate(heading);
-    shape(boidShape);
+    // shape(boidShape);   // KR
+      beginShape();
+      fill(0, 0, 255);
+      noStroke();
+      vertex(0, 0);
+      vertex(0, 50);
+      vertex(50, 50);
+      vertex(50, 0);
+      endShape(CLOSE);
     popMatrix();
   }
   
