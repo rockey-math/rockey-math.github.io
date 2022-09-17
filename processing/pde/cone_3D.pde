@@ -73,10 +73,12 @@
        endShape();
        
        translate(v1.x,v1.y,v1.z);
-       drawSphere(3, r2, total);
-       arrow3D(5.0, 0, r2, 6); // arrow3D(5.0, 0, r2, 6, n.x, n.y, n.z, theta, speed);  로테이션/로테이션속도도 서브루틴안에 들어가야 하나?
-       
-       println(v1.x, v1.y, v1.z);
+          pushMatrix();
+              rotateY(rotation3 * (PI/180));
+              drawSphere(3, r2, total);
+              arrow3D(5.0, 0, r2, 6); // arrow3D(5.0, 0, r2, 6, n.x, n.y, n.z, theta, speed);  로테이션/로테이션속도도 서브루틴안에 들어가야 하나?
+          popMatrix();
+       //println(v1.x, v1.y, v1.z);
       popMatrix();
       
       /*
@@ -101,6 +103,7 @@
        endShape();
        
        // translate(v2.x,v2.y,v2.z);
+       
        drawSphere(3, r3, total);
        arrow3D(5.0, 0, r3, 6); // arrow3D(5.0, 0, r2, 6, n.x, n.y, n.z, theta, speed);  로테이션/로테이션속도도 서브루틴안에 들어가야 하나?
        
