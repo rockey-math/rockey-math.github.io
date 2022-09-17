@@ -13,7 +13,7 @@ float maxForce;
 Boid[] boids;
 
 PShape boidShape;
-float shapeSize = 10.0;
+
 
 void setup() {
   size(700, 720);
@@ -35,6 +35,7 @@ void setup() {
     boids[i] = new Boid(new PVector(random(0, width), random(0, height)), PVector.random2D());
   }
   
+  /*
   float shapeSize = 3;
   
   boidShape = createShape();
@@ -47,6 +48,19 @@ void setup() {
   boidShape.vertex(0, 0);
   boidShape.vertex(-shapeSize, -shapeSize * 2);
   boidShape.endShape(CLOSE);
+  */
+  
+  boidShape = createShape();
+  boidShape.beginShape();
+  boidShape.fill(0, 0, 255);
+  boidShape.noStroke();
+  boidShape.vertex(0, 0);
+  boidShape.vertex(0, 50);
+  boidShape.vertex(50, 50);
+  boidShape.vertex(50, 0);
+  boidShape.endShape(CLOSE);
+}
+
 }
 
 
