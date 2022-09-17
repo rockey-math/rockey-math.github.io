@@ -51,8 +51,7 @@ void setup() {
   boidShape.endShape(CLOSE);
   */
   
-  /*
-  boidShape = createShape();
+ 
   boidShape.beginShape();
   boidShape.fill(0, 0, 255);
   boidShape.noStroke();
@@ -61,7 +60,6 @@ void setup() {
   boidShape.vertex(50, 50);
   boidShape.vertex(50, 0);
   boidShape.endShape(CLOSE);
-  */
 
 }
 
