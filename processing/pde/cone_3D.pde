@@ -55,8 +55,8 @@
        vertex(v.x,v.y,v.z);
        endShape();
        
-       translate(v);
-       sphere(20);
+       translate(v.x,v.y,v.z);
+       sphere(20.0);
        println(v);
        rotation3 = (rotation3 + 1);
       popMatrix();
