@@ -1,6 +1,8 @@
 ////fails if rect of enemy is not mostly square.
 ////The rotation is for visual purposes.
 ////The collision is tied to the unrotated rect of the box not the rotated visual
+// https://raw.githubusercontent.com/theartboy/lectureDemosProgramming/master/moveBulletInClass/Sprite.pde
+// https://www.youtube.com/watch?v=lalHizFnzp8
 
 Sprite s;
 Enemy e;
