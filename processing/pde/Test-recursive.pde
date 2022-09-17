@@ -33,7 +33,8 @@ void reco(Thread thrd, String in, int dpth, String out) {
   } 
   else {   
     for (int i=0; i<input.length(); i++) {     
-      out += input.charAt(i);     
+      out += input.charAt(i);   
+      println(out); // KR
       reco(thrd, in, dpth-1, out);
       out = out.substring(0, out.length() - 1);
     }
