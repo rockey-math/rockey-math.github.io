@@ -55,24 +55,29 @@
        // rotation2 = (rotation2 + 0.1);
       popMatrix();
       
+      v = new PVector(0, 200.0, 0);
+      translate(v.x,v.y,v.z);
+      rotateY(rotation1 * (PI/180));
+      rotateZ(rotation1 * (PI/180));
       
       pushMatrix();
-       noStroke();
-       fill(255,255,255);
+       // noStroke();
+       // fill(255,255,255);
+       
        strokeWeight(10);
-       v = new PVector(0, 200.0, 0);
+       // v = new PVector(0, 200.0, 0);
        
-       rotateY(rotation1 * (PI/180));
-       rotateZ(rotation1 * (PI/180));
-       
+       // rotateY(rotation1 * (PI/180));
+       // rotateZ(rotation1 * (PI/180));
+       /*
        beginShape(POINTS);
          // v = new PVector(0, 200.0, 0);
          // println(v);  // Prints "[ 10.0, 20.0, 0.0 ]"
          // v.rotate(HALF_PI);
          vertex(v.x,v.y,v.z);
        endShape();
-       
-       translate(v.x,v.y,v.z);
+       */
+       // translate(v.x,v.y,v.z);
        // sphere(20.0);
        drawSphere(3, 60, total)
        println(v);
