@@ -47,7 +47,7 @@ void draw () {
   pushMatrix();
   // rotateY(radians(myAngle));
   rotateZ(radians(angle2));
-  translate(158, 448, -10); 
+  // translate(158, 448, -10); 
   fill (color(2, 2, 222)); // blue            내 관심사는 어떻게 파랑과 빨강을 공전도 하면서 스스로 저전을 돌게 하는 것일까 하는것인데...
   box(40); // only one parameter: box(size);
   popMatrix();
