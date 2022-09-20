@@ -11,6 +11,7 @@ Vogel, H (1979). "A better way to construct the sunflower head"
 Mathematical Biosciences 44 (44): 179–189
 doi:10.1016/0025-5564(79)90080-4
 */
+// https://openprocessing.org/sketch/58819/
 
 int n=0, s=128;
 float a=radians(180*(3-sqrt(5))); // Golden angle
