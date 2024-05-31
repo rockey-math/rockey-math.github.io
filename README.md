@@ -11,3 +11,7 @@ readme
 <a href="https://rockey-math.github.io/processing/boid_Alignment.html">https://rockey-math.github.io/processing/boid_Alignment.html</a>
 
 <a href="https://rockey-math.github.io/3js/camera_webgl.html"> https://rockey-math.github.io/3js/camera_webgl.html</a>
+
+<a href="https://rockey-math.github.io/p5js/demo_3d.html">https://rockey-math.github.io/p5js/demo_3d.html</a>
+
+<a href="https://rockey-math.github.io/p5js/aizawa.html">https://rockey-math.github.io/p5js/aizawa.html</a>
