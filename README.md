@@ -9,3 +9,5 @@ readme
 <a href="https://rockey-math.github.io/js/fseries1.html">https://rockey-math.github.io/js/fseries1.html</a>
 
 <a href="https://rockey-math.github.io/processing/boid_Alignment.html">https://rockey-math.github.io/processing/boid_Alignment.html</a>
+
+<a href="https://rockey-math.github.io/3js/camera_webgl.html"> https://rockey-math.github.io/3js/camera_webgl.html</a>
